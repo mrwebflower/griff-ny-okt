@@ -1,0 +1,736 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .line-clamp-3 {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+  }
+}
+
+@layer base {
+  :root {
+    /* Griffentreprenor Brand Colors - Updated Modern Palette */
+    --primary-blue: 44 62 80; /* #2c3e50 - Professional dark blue-gray (footer color) */
+    --primary-blue-dark: 30 41 59; /* #1e293b - Darker slate */
+    --primary-blue-light: 71 85 105; /* #475569 - Lighter slate */
+
+    /* Professional Dark Accent - matches footer */
+    --accent-dark: 44 62 80; /* #2c3e50 - Professional dark blue-gray */
+    --accent-dark-darker: 30 41 59; /* #1e293b - Darker variation */
+    --accent-dark-lighter: 71 85 105; /* #475569 - Lighter variation */
+
+    --text-dark: 60 69 77; /* #3C454D */
+    --text-light: 119 119 119; /* #777777 */
+
+    --bg-light: 248 249 250; /* #f8f9fa */
+    --bg-dark: 44 62 80; /* #2c3e50 */
+    --border-light: 222 226 230; /* #dee2e6 */
+
+    /* shadcn theme integration */
+    --background: 0 0% 100%;
+    --foreground: var(--text-dark);
+    --card: 0 0% 100%;
+    --card-foreground: var(--text-dark);
+    --popover: 0 0% 100%;
+    --popover-foreground: var(--text-dark);
+    --primary: var(--primary-blue);
+    --primary-foreground: 0 0% 98%;
+    --secondary: var(--bg-light);
+    --secondary-foreground: var(--text-dark);
+    --muted: var(--bg-light);
+    --muted-foreground: var(--text-light);
+    --accent: var(--accent-dark);
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+    --border: var(--border-light);
+    --input: var(--border-light);
+    --ring: var(--primary-blue);
+    --radius: 0.5rem;
+    --chart-1: var(--primary-blue);
+    --chart-2: 173 58% 39%;
+    --chart-3: 197 37% 24%;
+    --chart-4: 43 74% 66%;
+    --chart-5: 27 87% 67%;
+  }
+
+  .dark {
+    --background: var(--bg-dark);
+    --foreground: 0 0% 98%;
+    --card: var(--bg-dark);
+    --card-foreground: 0 0% 98%;
+    --popover: var(--bg-dark);
+    --popover-foreground: 0 0% 98%;
+    --primary: var(--primary-blue);
+    --primary-foreground: var(--text-dark);
+    --secondary: 240 3.7% 15.9%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 240 3.7% 15.9%;
+    --muted-foreground: 240 5% 64.9%;
+    --accent: 240 3.7% 15.9%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 240 3.7% 15.9%;
+    --input: 240 3.7% 15.9%;
+    --ring: var(--primary-blue);
+    --chart-1: 220 70% 50%;
+    --chart-2: 160 60% 45%;
+    --chart-3: 30 80% 55%;
+    --chart-4: 280 65% 60%;
+    --chart-5: 340 75% 55%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-raleway;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-bold leading-tight;
+    color: hsl(var(--text-dark));
+  }
+
+  h1 {
+    @apply text-4xl md:text-5xl;
+  }
+
+  h2 {
+    @apply text-3xl md:text-4xl;
+  }
+
+  h3 {
+    @apply text-2xl md:text-3xl;
+  }
+
+  h4 {
+    @apply text-xl md:text-2xl;
+  }
+
+  p {
+    @apply leading-relaxed;
+    color: hsl(var(--text-light));
+  }
+
+  a {
+    @apply transition-colors duration-300;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-primary text-primary-foreground hover:bg-primary/90 px-6 py-3 rounded-md font-semibold transition-all duration-300 hover:shadow-lg hover:-translate-y-1;
+  }
+
+  .container-custom {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  .shadow-soft {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  }
+
+  .shadow-soft-sm {
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  }
+}
+
+/* Utility classes for Norwegian text */
+@layer utilities {
+  .font-raleway {
+    font-family: var(--font-raleway), -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  }
+
+  .text-gradient {
+    @apply bg-gradient-to-r from-primary to-primary-light bg-clip-text text-transparent;
+  }
+}
+
+/* Force override any potential yellow/cream accent colors */
+@layer base {
+  :root {
+    /* Override any yellow accent colors that might be defined elsewhere */
+    --accent-yellow: var(--accent-dark) !important;
+    --accent-yellow-dark: var(--accent-dark-darker) !important;
+    --accent-yellow-light: var(--accent-dark-lighter) !important;
+
+    /* Force primary to be blue - both as HSL and raw values */
+    --primary: 44 62 80 !important;
+    --primary-foreground: 255 255 255 !important;
+
+    /* Override in different formats in case HSL isn't working */
+    --tw-bg-opacity: 1 !important;
+  }
+
+  /* Force on all elements */
+  * {
+    --primary: 44 62 80 !important;
+  }
+}
+
+/* Ensure primary colors use the correct blue color */
+.bg-primary {
+  background-color: #2c3e50 !important; /* Direct hex fallback */
+  background-color: hsl(var(--primary-blue)) !important;
+}
+
+.text-primary {
+  color: #2c3e50 !important; /* Direct hex fallback */
+  color: hsl(var(--primary-blue)) !important;
+}
+
+.hover\:bg-primary\/90:hover {
+  background-color: rgba(44, 62, 80, 0.9) !important; /* Direct rgba fallback */
+  background-color: hsl(var(--primary-blue) / 0.9) !important;
+}
+
+.hover\:text-primary:hover {
+  color: #2c3e50 !important; /* Direct hex fallback */
+  color: hsl(var(--primary-blue)) !important;
+}
+
+/* Fix button primary styling */
+.btn-primary {
+  background-color: #2c3e50 !important; /* Direct hex fallback */
+  background-color: hsl(var(--primary-blue)) !important;
+  color: white !important;
+}
+
+.btn-primary:hover {
+  background-color: rgba(44, 62, 80, 0.9) !important; /* Direct rgba fallback */
+  background-color: hsl(var(--primary-blue) / 0.9) !important;
+}
+
+/* Force Tailwind primary utilities */
+[class*="bg-primary"] {
+  background-color: #2c3e50 !important;
+}
+
+[class*="text-primary"] {
+  color: #2c3e50 !important;
+}
+
+/* Fix slate-50 background that appears yellow/cream */
+.bg-slate-50 {
+  background-color: #f1f5f9 !important;
+}
+
+/* Override secondary variant which may be using yellow */
+.bg-secondary {
+  background-color: #f8f9fa !important;
+}
+
+[class*="variant-secondary"] {
+  background-color: white !important;
+  color: #2c3e50 !important;
+  border: 1px solid #e2e8f0 !important;
+}
+
+/* Override any yellow classes that might exist */
+.bg-yellow-400, .bg-yellow-500, .bg-yellow-600,
+.from-yellow-400, .from-yellow-500, .from-yellow-600,
+.to-yellow-400, .to-yellow-500, .to-yellow-600 {
+  /* Keep the Hero gradient yellow as requested */
+}
+
+/* Ensure category active states use blue */
+.bg-primary.text-white {
+  background-color: #2c3e50 !important;
+  color: white !important;
+}
+
+/* Fix any primary-related classes */
+.bg-primary\/10 {
+  background-color: rgba(44, 62, 80, 0.1) !important;
+}
+
+.border-primary {
+  border-color: #2c3e50 !important;
+}
+
+.ring-primary {
+  --tw-ring-color: #2c3e50 !important;
+}
+
+/* Fix CTA sections that might be showing yellow */
+article .bg-primary,
+main .bg-primary,
+div .bg-primary {
+  background-color: #2c3e50 !important;
+}
+
+/* Fix Button secondary variant */
+.btn-secondary,
+[data-variant="secondary"],
+button[variant="secondary"] {
+  background-color: white !important;
+  color: #2c3e50 !important;
+  border: 1px solid #e2e8f0 !important;
+}
+
+/* Override Tailwind button utilities */
+.bg-primary.hover\:bg-primary\/90:hover {
+  background-color: rgba(44, 62, 80, 0.9) !important;
+}
+
+/* Fix yellow text colors in headings and buttons - but not if they should be white */
+h1:not(.text-white):not(.bg-black\/50 *),
+h2:not(.text-white):not(.bg-black\/50 *),
+h3:not(.text-white):not(.bg-black\/50 *),
+h4:not(.text-white):not(.bg-black\/50 *),
+h5:not(.text-white):not(.bg-black\/50 *),
+h6:not(.text-white):not(.bg-black\/50 *) {
+  color: #2c3e50 !important;
+}
+
+.text-yellow-400, .text-yellow-500, .text-yellow-600,
+.text-amber-400, .text-amber-500, .text-amber-600 {
+  color: #2c3e50 !important;
+}
+
+/* Fix button text colors */
+button, .btn-secondary, [variant="secondary"] {
+  color: #2c3e50 !important;
+}
+
+/* Buttons on light backgrounds should have dark blue background */
+.bg-primary button,
+.bg-primary .btn-secondary,
+.bg-primary [variant="secondary"],
+.bg-primary a[variant="secondary"] {
+  background-color: #2c3e50 !important;
+  color: white !important;
+  border: none !important;
+}
+
+.bg-primary button:hover,
+.bg-primary .btn-secondary:hover {
+  background-color: #1e293b !important;
+}
+
+/* Fix button text and icons inside light CTA sections */
+.bg-primary button *,
+.bg-primary .btn-secondary *,
+.bg-primary a[variant="secondary"] * {
+  color: white !important;
+}
+
+/* Change dark blue CTA backgrounds to very light gray */
+.bg-primary.text-white,
+div.bg-primary {
+  background-color: #f8f9fa !important; /* Very light gray */
+  color: #2c3e50 !important; /* Dark text */
+}
+
+/* Fix text inside primary backgrounds */
+.bg-primary h1, .bg-primary h2, .bg-primary h3, .bg-primary h4,
+.bg-primary p, .bg-primary span, .bg-primary div {
+  color: #2c3e50 !important;
+}
+
+/* Fix newsletter section specifically */
+.bg-primary .text-white,
+.bg-primary .opacity-90 {
+  color: #2c3e50 !important;
+  opacity: 1 !important;
+}
+
+/* Footer should remain dark */
+footer .bg-griffen-bg-dark,
+footer.bg-griffen-bg-dark {
+  background-color: #2c3e50 !important;
+  color: white !important;
+}
+
+footer .bg-griffen-bg-dark *,
+footer.bg-griffen-bg-dark * {
+  color: white !important;
+}
+
+/* Fix specific yellow text issues */
+/* Fix arrow icons in buttons */
+.bg-primary svg,
+svg.ml-2,
+svg.w-4.h-4 {
+  color: currentColor !important;
+  fill: currentColor !important;
+}
+
+/* Fix checkmarks on blog overview page */
+.bg-white\/80 {
+  color: #2c3e50 !important;
+}
+
+/* Header button "Kontakt oss" should have white text */
+header .btn-primary {
+  background-color: #2c3e50 !important;
+  color: white !important;
+}
+
+/* "Se alle tjenester" button should have white text */
+a.btn-primary,
+.btn-primary[href] {
+  background-color: #2c3e50 !important;
+  color: white !important;
+}
+
+/* Hero section specific fixes */
+/* "Velkommen til" should be white */
+.text-white {
+  color: white !important;
+}
+
+/* Specific fix for "Velkommen til" text */
+h1 .text-white {
+  color: white !important;
+}
+
+/* Hero credentials should be white */
+.bg-black\/50 p,
+.bg-black\/50 span,
+.bg-black\/50 li {
+  color: white !important;
+}
+
+/* Fix dots/bullets to be white - use !important to override */
+.bg-black\/50 li::before {
+  content: "• " !important;
+  color: white !important;
+}
+
+.bg-black\/50 li::marker {
+  color: white !important;
+}
+
+/* Hero list items specifically */
+.bg-black\/50 ul li {
+  color: white !important;
+  list-style: none !important;
+}
+
+.bg-black\/50 ul li:before {
+  content: "• " !important;
+  color: white !important;
+  margin-right: 0.5rem !important;
+}
+
+/* Force hero credentials text to be white */
+/* Covered by more specific rules below */
+
+/* Fix purple text in contact section */
+.text-griffen-text-light {
+  color: #777777 !important;
+}
+
+/* Fix address and hours text color */
+.bg-white p,
+.shadow-soft-sm p,
+.shadow-soft-sm div {
+  color: #777777 !important;
+}
+
+/* Blog post icons should be light gray */
+.text-slate-500 svg,
+.text-sm.text-slate-500 svg,
+article svg.w-4.h-4 {
+  color: #94a3b8 !important;
+  fill: #94a3b8 !important;
+}
+
+/* Force hero text to be white - more specific */
+.bg-black\/50,
+.bg-black\/50 * {
+  color: white !important;
+}
+
+/* Ensure all hero text including credentials is white */
+.bg-black\/50 p,
+.bg-black\/50 li,
+.bg-black\/50 span,
+.bg-black\/50 div {
+  color: white !important;
+}
+
+/* Override any remaining yellow/gold colors */
+[class*="text-yellow"],
+[class*="text-amber"],
+[class*="text-orange"],
+[style*="color: yellow"],
+[style*="color: #ff"],
+[style*="color: #fe"],
+[style*="color: #fd"],
+[style*="color: #fc"],
+[style*="color: #fb"],
+[style*="color: #fa"],
+[style*="color: #f9"],
+[style*="color: #f8"],
+[style*="color: rgb(255"],
+[style*="color: rgb(254"],
+[style*="color: rgb(253"],
+[style*="color: rgb(252"],
+[style*="color: rgb(251"],
+[style*="color: rgb(250"],
+[style*="color: rgb(249"],
+[style*="color: rgb(248"] {
+  color: #2c3e50 !important;
+}
+
+/* Override gray text in hero section specifically */
+section.relative .text-gray-300,
+section.relative .text-gray-400,
+section.relative .text-gray-500 {
+  color: white !important;
+}
+
+/* Ensure all primary buttons have correct styling */
+.btn-primary,
+a.btn-primary,
+button.btn-primary {
+  background-color: #2c3e50 !important;
+  color: white !important;
+}
+
+.btn-primary:hover {
+  background-color: #1e293b !important;
+}
+
+/* Fix icons in all buttons */
+.btn-primary svg,
+a.btn-primary svg,
+button svg {
+  color: white !important;
+  fill: white !important;
+}
+
+/* Specific fix for CTA buttons in light backgrounds */
+.bg-primary .btn-secondary svg,
+.bg-primary button svg {
+  color: white !important;
+  fill: white !important;
+}
+
+/* Force fix for "Få et tilbud i dag" button and similar */
+.bg-primary a,
+.bg-primary a span,
+.bg-primary a svg,
+a[variant="secondary"] span,
+a[variant="secondary"] svg,
+.btn-secondary span,
+.btn-secondary svg {
+  color: white !important;
+  fill: white !important;
+}
+
+/* Ensure secondary variant buttons have proper styling */
+[variant="secondary"],
+.variant-secondary,
+a[variant="secondary"],
+button[variant="secondary"],
+.bg-primary [variant="secondary"],
+.bg-primary a[variant="secondary"],
+.bg-primary button[variant="secondary"],
+.bg-primary .variant-secondary {
+  background-color: #2c3e50 !important;
+  color: white !important;
+  border: none !important;
+  padding: 0.75rem 1.5rem !important;
+  border-radius: 0.375rem !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  gap: 0.5rem !important;
+}
+
+[variant="secondary"]:hover,
+a[variant="secondary"]:hover,
+button[variant="secondary"]:hover,
+.bg-primary [variant="secondary"]:hover {
+  background-color: #1e293b !important;
+}
+
+/* CRITICAL FIX: "Velkommen til" text MUST be white */
+/* The "Velkommen til" is plain text in h1, not in a span */
+h1 {
+  color: white !important;
+}
+
+/* More specific: Hero h1 text must be white */
+.text-white h1,
+.text-center.text-white h1,
+section .text-white h1 {
+  color: white !important;
+}
+
+/* Ensure hero h1 text excluding the gradient span */
+h1.text-5xl.font-bold {
+  color: white !important;
+}
+
+/* Keep the gradient span as is */
+h1 span.bg-gradient-to-r {
+  background-image: linear-gradient(to right, var(--tw-gradient-stops)) !important;
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+  color: transparent !important;
+}
+
+/* Fix newsletter heading yellow text */
+h2.text-3xl.font-bold,
+h2.text-4xl.font-bold {
+  color: #2c3e50 !important;
+}
+
+/* Fix yellow headings in CTA sections - from screenshot */
+.bg-primary h2,
+.bg-primary h3,
+div.bg-primary h2.font-bold {
+  color: #2c3e50 !important;
+}
+
+/* Fix "Få et tilbud i dag" button text specifically */
+a[variant="secondary"] span,
+a[variant="secondary"] {
+  color: white !important;
+}
+
+/* Fix button text inside ArticleWrapper CTA */
+.bg-primary a span,
+.bg-primary button span {
+  color: white !important;
+}
+
+/* Target newsletter section heading specifically */
+.bg-primary h2.text-3xl,
+.bg-primary h2.text-4xl,
+section.bg-primary h2 {
+  color: #2c3e50 !important;
+}
+
+/* Fix Contact CTA section in blog articles */
+/* Since bg-primary with text-white is actually light gray background, make h4 dark blue */
+.bg-primary.text-white {
+  background-color: #f8f9fa !important;
+}
+
+.bg-primary.text-white h4,
+.bg-primary.rounded-xl h4,
+.bg-primary h4.text-2xl.font-bold,
+div.bg-primary.text-white.rounded-xl h4.text-2xl.font-bold {
+  color: #2c3e50 !important;
+}
+
+/* Ensure all text in the CTA section is dark blue except the button */
+.bg-primary.text-white p,
+.bg-primary.text-white div {
+  color: #2c3e50 !important;
+}
+
+/* But keep the button white background with dark text */
+.bg-primary.text-white Button,
+.bg-primary.text-white a[href="/kontakt"] {
+  background-color: #2c3e50 !important;
+  color: white !important;
+}
+
+/* Fix table styling - remove yellow text */
+table th,
+table td,
+tbody th,
+tbody td,
+tr th,
+tr td {
+  color: #2c3e50 !important;
+}
+
+/* Table headers should be dark blue */
+table th,
+thead th {
+  color: #2c3e50 !important;
+  font-weight: 600 !important;
+}
+
+/* Fix the specific Button with variant="secondary" in ArticleWrapper */
+.bg-primary Button[variant="secondary"],
+.bg-primary .btn[variant="secondary"],
+.bg-primary a:has(> span),
+.text-white Button[variant="secondary"] {
+  background-color: white !important;
+  color: #2c3e50 !important;
+}
+
+.bg-primary Button[variant="secondary"] span,
+.bg-primary a:has(> span) span {
+  color: #2c3e50 !important;
+}
+
+/* Override for white button on dark background */
+.bg-primary.text-white Button[variant="secondary"] {
+  background-color: white !important;
+  color: #2c3e50 !important;
+}
+
+/* FINAL FIX: Ensure all h1 in hero sections are white */
+.relative.z-10 h1,
+.text-center.text-white h1,
+div[class*="text-white"] h1,
+.container.text-center.text-white h1 {
+  color: white !important;
+}
+
+/* Prevent h1 headings in other sections from being white */
+h1:not(.text-white *):not([class*="text-white"] *) {
+  color: #2c3e50 !important;
+}
+
+/* Blog CTA button specific fix */
+.bg-primary.rounded-xl Button,
+.bg-primary.rounded-xl a {
+  background-color: white !important;
+  color: #2c3e50 !important;
+  padding: 0.75rem 1.5rem !important;
+  border-radius: 0.375rem !important;
+}
+
+.bg-primary.rounded-xl Button *,
+.bg-primary.rounded-xl a * {
+  color: #2c3e50 !important;
+}
+
+/* FORCE: Article CTA section h4 to be dark blue with maximum specificity */
+main article div.bg-primary.text-white.rounded-xl h4,
+div.bg-primary.text-white.rounded-xl.p-8.my-12.text-center h4.text-2xl.font-bold.mb-4,
+.prose + div.bg-primary h4 {
+  color: #2c3e50 !important;
+}
+
+/* FORCE: Hero trust indicators (credentials) to be white */
+.border-t.border-white\/20 p,
+.border-t.border-white\/20 div,
+.border-t.border-white\/20 .text-gray-400,
+.border-t.border-white\/20 .text-sm.text-gray-400,
+div.border-t.border-white\/20 div.flex.flex-wrap.justify-center.gap-8.text-sm.text-gray-400 div,
+.pt-8.border-t.border-white\/20 .text-gray-400 {
+  color: white !important;
+}
+
+/* Specific selectors for the credential items */
+.flex.items-center.gap-2,
+.flex.items-center.gap-2 span:last-child {
+  color: white !important;
+}
+
+/* Target the exact hero credentials by their parent structure */
+section.relative .container .pt-8.border-t.border-white\/20 .text-gray-400,
+section.relative .pt-8 .flex.flex-wrap .flex.items-center,
+.pt-8.border-t.border-white\/20 .flex.justify-center .flex.items-center {
+  color: white !important;
+}
