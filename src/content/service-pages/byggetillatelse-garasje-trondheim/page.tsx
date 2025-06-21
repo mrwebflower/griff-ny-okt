@@ -105,16 +105,18 @@ export default function Article() {
           {/* Table of Contents - Sidebar */}
           <aside className="lg:w-1/4">
             <div className="sticky top-8">
-              <div className="bg-slate-50 rounded-xl p-6 mb-8">
-                <h3 className="font-bold text-slate-900 mb-4">Innholdsfortegnelse</h3>
+              <div className="bg-griffen-bg-dark rounded-xl p-6 mb-8">
+                <h3 className="text-lg font-bold text-white mb-4" style={{ color: 'white !important', fontSize: '1.125rem !important' }}>Innholdsfortegnelse</h3>
                 <nav className="space-y-2">
                   {tableOfContents.map((item) => (
                     <a
                       key={item.id}
                       href={`#${item.id}`}
-                      className="block text-sm text-slate-600 hover:text-primary transition-colors py-1"
+                      className="block text-sm text-white hover:text-slate-200 transition-colors py-1 flex items-center gap-2"
+                      style={{ color: 'white !important' }}
                     >
-                      {item.title}
+                      <span className="w-1.5 h-1.5 rounded-full bg-white" />
+                      <span className="text-white" style={{ color: 'white !important' }}>{item.title}</span>
                     </a>
                   ))}
                 </nav>

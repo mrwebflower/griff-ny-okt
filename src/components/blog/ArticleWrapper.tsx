@@ -173,30 +173,26 @@ export default function ArticleWrapper({
           {tableOfContents.length > 0 && (
             <aside className="lg:w-80 lg:flex-shrink-0 order-2 lg:order-1">
               <div className="sticky top-8">
-                <div className="bg-slate-50 rounded-xl p-6 mb-8">
+                <div className="bg-griffen-bg-dark rounded-xl p-6 mb-8">
                   <div className="flex items-center gap-2 mb-4">
-                    <List className="w-5 h-5 text-primary" />
-                    <h2 className="font-bold text-slate-900">Innholdsfortegnelse</h2>
+                    <List className="w-4 h-4 text-white" />
+                    <h2 className="text-lg font-bold text-white !text-white" style={{ color: 'white !important', fontSize: '1.125rem !important' }}>Innholdsfortegnelse</h2>
                   </div>
                   <nav className="space-y-2">
                     {tableOfContents.map((item) => (
                       <a
                         key={item.id}
                         href={`#${item.id}`}
-                        style={{ color: item.level === 1 ? '#1e293b !important' : item.level === 2 ? '#475569 !important' : '#64748b !important' }}
-                        className={`block text-sm hover:text-primary transition-colors py-2 px-3 rounded-lg hover:bg-white ${
+                        style={{ color: 'white !important' }}
+                        className={`block text-sm hover:text-slate-200 transition-colors py-2 px-3 rounded-lg hover:bg-slate-700/50 text-white ${
                           item.level === 1 ? 'font-semibold' :
                           item.level === 2 ? 'font-medium' :
                           'ml-4 text-xs'
                         }`}
                       >
                         <span className="flex items-center gap-2">
-                          <span className={`w-1.5 h-1.5 rounded-full ${
-                            item.level === 1 ? 'bg-primary' :
-                            item.level === 2 ? 'bg-primary' :
-                            'bg-slate-400'
-                          }`} />
-                          <span style={{ color: 'inherit !important' }}>{item.title}</span>
+                          <span className="w-1.5 h-1.5 rounded-full bg-white" />
+                          <span style={{ color: 'white !important' }} className="text-white">{item.title}</span>
                         </span>
                       </a>
                     ))}

@@ -317,15 +317,15 @@ export default function TjenesterPage() {
             Vi gir deg en kostnadsfri vurdering og et uforpliktende tilbud på ditt prosjekt.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button asChild size="lg" className="bg-primary hover:bg-primary/90">
-              <Link href="/kontakt">
-                Få gratis tilbud
-                <ArrowRight className="ml-2 w-5 h-5" />
+            <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-white !text-white" style={{ color: 'white !important' }}>
+              <Link href="/kontakt" className="text-white !text-white" style={{ color: 'white !important' }}>
+                <span className="text-white !text-white" style={{ color: 'white !important' }}>Få gratis tilbud</span>
+                <ArrowRight className="ml-2 w-5 h-5 text-white" style={{ color: 'white !important' }} />
               </Link>
             </Button>
-            <Button asChild variant="outline" size="lg" className="border-slate-600 text-white hover:bg-slate-800">
-              <Link href="tel:99883080">
-                Ring oss: 99883080
+            <Button asChild variant="outline" size="lg" className="border-slate-600 text-white hover:bg-slate-800 hover:text-white !text-white" style={{ color: 'white !important' }}>
+              <Link href="tel:99883080" className="text-white !text-white" style={{ color: 'white !important' }}>
+                <span className="text-white !text-white" style={{ color: 'white !important' }}>Ring oss: 99883080</span>
               </Link>
             </Button>
           </div>

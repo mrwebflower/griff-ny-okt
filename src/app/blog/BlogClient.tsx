@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import { Calendar, Clock, ArrowRight, Tag } from "lucide-react";
+import { Calendar, Clock, ArrowRight, Tag, Hammer, Home, Wrench, Building } from "lucide-react";
 import { useState, useMemo } from "react";
 import type { BlogPost, BlogCategory } from "@/lib/blogTypes";
 
@@ -13,6 +13,13 @@ interface BlogClientProps {
 
 export default function BlogClient({ initialPosts, categories }: BlogClientProps) {
   const [selectedCategory, setSelectedCategory] = useState("Alle artikler");
+
+  // Helper function to get icon for each post
+  const getPostIcon = (index: number) => {
+    const icons = [Hammer, Home, Wrench, Building];
+    const IconComponent = icons[index % icons.length];
+    return IconComponent;
+  };
 
   // Filter posts based on selected category
   const filteredPosts = useMemo(() => {
@@ -99,12 +106,8 @@ export default function BlogClient({ initialPosts, categories }: BlogClientProps
                 <Link href={`/blog/${filteredPosts[0].id}`} className="block group">
                   <article className="bg-white rounded-2xl overflow-hidden border border-slate-200 hover:border-slate-300 transition-all duration-300 hover:shadow-xl lg:flex mb-12">
                     <div className="lg:w-1/2">
-                      <div className="aspect-[4/3] lg:aspect-square relative overflow-hidden">
-                        <img
-                          src={filteredPosts[0].image}
-                          alt={filteredPosts[0].title}
-                          className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                        />
+                      <div className="aspect-[4/3] lg:aspect-square relative overflow-hidden bg-gradient-to-br from-primary/10 to-primary/20 flex items-center justify-center">
+                        <Building className="w-24 h-24 text-primary/60" />
                         <div className="absolute top-4 left-4">
                           <span className="bg-primary text-white px-3 py-1 rounded-full text-sm font-medium">
                             Utvalgt artikkel
@@ -130,7 +133,7 @@ export default function BlogClient({ initialPosts, categories }: BlogClientProps
                         </div>
                         <div className="flex items-center gap-1">
                           <Tag className="w-4 h-4" />
-                          {filteredPosts[0].category}
+                          <span className="text-slate-700 !text-slate-700" style={{ color: '#334155 !important' }}>{filteredPosts[0].category}</span>
                         </div>
                       </div>
                       <h2 className="text-2xl lg:text-3xl font-bold text-slate-900 mb-4 group-hover:text-primary transition-colors">
@@ -150,19 +153,17 @@ export default function BlogClient({ initialPosts, categories }: BlogClientProps
 
               {/* Articles Grid */}
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                {filteredPosts.slice(1).map((post) => (
+                {filteredPosts.slice(1).map((post, index) => {
+                  const IconComponent = getPostIcon(index + 1);
+                  return (
                   <Link
                     key={post.id}
                     href={`/blog/${post.id}`}
                     className="block group"
                   >
                     <article className="bg-white rounded-2xl overflow-hidden border border-slate-200 hover:border-slate-300 transition-all duration-300 hover:shadow-xl h-full">
-                      <div className="aspect-[16/10] relative overflow-hidden">
-                        <img
-                          src={post.image}
-                          alt={post.title}
-                          className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                        />
+                      <div className="aspect-[16/10] relative overflow-hidden bg-gradient-to-br from-primary/10 to-primary/20 flex items-center justify-center">
+                        <IconComponent className="w-16 h-16 text-primary/60" />
                       </div>
                       <div className="p-6 flex flex-col h-full">
                         <div className="flex items-center gap-4 text-sm text-slate-500 mb-3">
@@ -183,7 +184,7 @@ export default function BlogClient({ initialPosts, categories }: BlogClientProps
                         </div>
                         <div className="flex items-center gap-2 mb-3">
                           <Tag className="w-4 h-4 text-primary" />
-                          <span className="text-sm text-slate-700 font-medium">{post.category}</span>
+                          <span className="text-sm text-slate-700 font-medium !text-slate-700" style={{ color: '#334155 !important' }}>{post.category}</span>
                         </div>
                         <h2 className="text-xl font-bold text-slate-900 mb-3 group-hover:text-primary transition-colors line-clamp-2">
                           {post.title}
@@ -198,7 +199,8 @@ export default function BlogClient({ initialPosts, categories }: BlogClientProps
                       </div>
                     </article>
                   </Link>
-                ))}
+                  );
+                })}
               </div>
 
               {/* Load More Button */}

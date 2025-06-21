@@ -1,6 +1,32 @@
-# Blog Page Improvements - TODO
+# Recent Button and TOC Styling Fixes - TODO
 
-## Status: In Progress
+## Status: Completed ✅
+
+### ✅ Just Completed Tasks (Latest Session)
+- [x] Fixed white button text on tjenester page
+  - Added text-white classes to primary button
+  - Added hover:text-white to outline button
+  - Ensured Link component also has text-white class
+- [x] Updated Innholdsfortegnelse (Table of Contents) styling:
+  - Made heading smaller (text-lg instead of default font-bold)
+  - Forced white text color with !important styles and inline styles
+  - Changed background to use same blue as footer (bg-griffen-bg-dark = #2c3e50)
+  - Made all navigation dots white (bg-white) instead of colored
+  - Updated hover states to use slate-200 and slate-700/50 to match new background
+  - Applied changes to both ArticleWrapper.tsx and service pages
+- [x] Replaced blog post images with construction icons:
+  - Removed img elements from blog listing
+  - Added Building, Hammer, Home, Wrench icons from Lucide React
+  - Created gradient backgrounds (from-primary/10 to-primary/20)
+  - Applied to both featured post and grid articles
+- [x] Fixed category text appearing white on blog cards:
+  - Added forced text color with !important styles (#334155)
+  - Applied to both featured post and grid article category labels
+  - Ensured "Våtrom" and other categories display as dark text
+
+# Previous Blog Page Improvements - TODO
+
+## Status: Previously Completed
 
 ### ✅ Completed Tasks
 - [x] Initial analysis of current blog structure
@@ -42,6 +68,7 @@
 - [x] Fix blog listing page to show proper H1-extracted titles
 - [x] Update blogUtils.ts to prioritize H1 headings consistently
 - [x] Ensure both listing and individual pages use same title extraction logic
+- [x] Push all improvements to GitHub repository (commit: 9fea5a1)
 
 ### 📋 Remaining Optional Tasks
 
