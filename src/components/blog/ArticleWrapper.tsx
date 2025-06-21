@@ -61,10 +61,13 @@ export default function ArticleWrapper({
     return matches;
   };
 
-  const tableOfContents = generateTableOfContents(htmlContent);
+  // Remove first h1 before generating TOC and styling content
+  const contentWithoutFirstH1 = htmlContent.replace(/<h1[^>]*>.*?<\/h1>/i, '');
+
+  const tableOfContents = generateTableOfContents(contentWithoutFirstH1);
 
   // Auto-style the HTML content with better list handling and heading IDs
-  const styledHtmlContent = htmlContent
+  const styledHtmlContent = contentWithoutFirstH1
     // First, add IDs to headings that don't have them
     .replace(/<h([1-3])([^>]*?)>([^<]+)<\/h[1-3]>/gi, (match, level, attrs, title) => {
       if (attrs.includes('id=')) {
@@ -164,11 +167,11 @@ export default function ArticleWrapper({
 
       {/* Article Content */}
       <div className="container max-w-6xl mx-auto px-4 pb-16">
-        <div className="flex flex-col lg:flex-row gap-12">
+        <div className="flex flex-col lg:flex-row gap-8">
 
           {/* Table of Contents - Sidebar for Desktop */}
           {tableOfContents.length > 0 && (
-            <aside className="lg:w-1/4 order-2 lg:order-1">
+            <aside className="lg:w-80 lg:flex-shrink-0 order-2 lg:order-1">
               <div className="sticky top-8">
                 <div className="bg-slate-50 rounded-xl p-6 mb-8">
                   <div className="flex items-center gap-2 mb-4">
@@ -180,10 +183,11 @@ export default function ArticleWrapper({
                       <a
                         key={item.id}
                         href={`#${item.id}`}
+                        style={{ color: item.level === 1 ? '#1e293b !important' : item.level === 2 ? '#475569 !important' : '#64748b !important' }}
                         className={`block text-sm hover:text-primary transition-colors py-2 px-3 rounded-lg hover:bg-white ${
-                          item.level === 1 ? 'font-semibold text-slate-900' :
-                          item.level === 2 ? 'text-slate-700' :
-                          'ml-4 text-xs text-slate-600'
+                          item.level === 1 ? 'font-semibold' :
+                          item.level === 2 ? 'font-medium' :
+                          'ml-4 text-xs'
                         }`}
                       >
                         <span className="flex items-center gap-2">
@@ -192,7 +196,7 @@ export default function ArticleWrapper({
                             item.level === 2 ? 'bg-primary' :
                             'bg-slate-400'
                           }`} />
-                          <span className="text-slate-800">{item.title}</span>
+                          <span style={{ color: 'inherit !important' }}>{item.title}</span>
                         </span>
                       </a>
                     ))}
@@ -216,7 +220,7 @@ export default function ArticleWrapper({
           )}
 
           {/* Main Content */}
-          <main className={`${tableOfContents.length > 0 ? "lg:w-3/4" : "w-full"} order-1 lg:order-2`}>
+          <main className={`${tableOfContents.length > 0 ? "lg:flex-1" : "w-full"} order-1 lg:order-2`}>
             <article
               className="prose prose-lg prose-slate max-w-none"
               // biome-ignore lint/security/noDangerouslySetInnerHtml: HTML content is from controlled source and properly sanitized

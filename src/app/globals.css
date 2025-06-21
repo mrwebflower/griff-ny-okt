@@ -734,3 +734,25 @@ section.relative .pt-8 .flex.flex-wrap .flex.items-center,
 .pt-8.border-t.border-white\/20 .flex.justify-center .flex.items-center {
   color: white !important;
 }
+
+/* Fix Table of Contents link colors specifically */
+aside nav a,
+aside nav a span,
+.bg-slate-50 nav a,
+.bg-slate-50 nav a span {
+  color: inherit !important;
+}
+
+/* Ensure TOC links are properly colored and not overridden */
+aside .bg-slate-50 nav a[href^="#"] {
+  color: #1e293b !important;
+}
+
+aside .bg-slate-50 nav a[href^="#"]:hover {
+  color: hsl(var(--primary-blue)) !important;
+}
+
+/* TOC link text specifically */
+aside nav a span:last-child {
+  color: inherit !important;
+}

@@ -19,8 +19,8 @@ const getArticleContent = async (slug: string) => {
       const metaServicesMatch = html.match(/<!-- Services: ([^>]+) -->/i);
       const metaIdMatch = html.match(/<!-- Article ID: ([^>]+) -->/i);
 
-      // Extract title from h1 or meta comment
-      const title = metaTitleMatch?.[1] || titleMatch?.[1] || slug.replace(/-/g, ' ');
+      // Extract title from h1 first (the actual title in the content), then fall back to meta comment
+      const title = titleMatch?.[1] || metaTitleMatch?.[1] || slug.replace(/-/g, ' ');
 
       // Extract description from first paragraph
       const descMatch = html.match(/<p[^>]*>([^<]+)<\/p>/i);

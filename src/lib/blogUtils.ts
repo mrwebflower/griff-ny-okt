@@ -124,14 +124,14 @@ function extractMetadataFromHtml(html: string, fileName: string) {
   const htmlTitleMatch = html.match(/<title[^>]*>([^<]+)<\/title>/i);
   const metaServicesMatch = html.match(/<!-- Services: ([^>]+) -->/i);
 
-  // Extract title with priority: HTML title > Article Name comment > H1 > fileName
+  // Extract title with priority: H1 heading > Article Name comment > HTML title > fileName
   let rawTitle = "";
-  if (htmlTitleMatch?.[1] && !htmlTitleMatch[1].includes("Artikkel")) {
-    rawTitle = htmlTitleMatch[1];
+  if (titleMatch?.[1]) {
+    rawTitle = titleMatch[1];
   } else if (metaTitleMatch?.[1]) {
     rawTitle = metaTitleMatch[1];
-  } else if (titleMatch?.[1]) {
-    rawTitle = titleMatch[1];
+  } else if (htmlTitleMatch?.[1] && !htmlTitleMatch[1].includes("Artikkel")) {
+    rawTitle = htmlTitleMatch[1];
   } else {
     rawTitle = fileName.replace(/-/g, ' ');
   }

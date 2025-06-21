@@ -32,6 +32,16 @@
 - [x] Fix quote text colors from yellow to dark
 - [x] Reduce 'Trenger du hjelp?' heading size
 - [x] Fix client-server architecture runtime errors
+- [x] Fix TOC (Innholdsfortegnelse) overlapping with main content heading
+- [x] Fix TOC link colors (were white, now properly dark gray/blue)
+- [x] Improve TOC sidebar layout and spacing
+- [x] Add proper CSS overrides for TOC text colors
+- [x] Extract first H1 from HTML articles as proper page titles
+- [x] Hide first H1 in content to avoid duplication
+- [x] Implement automatic title extraction for all articles without modifying source files
+- [x] Fix blog listing page to show proper H1-extracted titles
+- [x] Update blogUtils.ts to prioritize H1 headings consistently
+- [x] Ensure both listing and individual pages use same title extraction logic
 
 ### 📋 Remaining Optional Tasks
 
