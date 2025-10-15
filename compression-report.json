@@ -1,0 +1,839 @@
+{
+  "summary": {
+    "processed": 118,
+    "failed": 0,
+    "duration": "15.81s",
+    "originalSize": 154772746,
+    "compressedSize": 29289570,
+    "totalSavings": 125483176,
+    "savingsPercent": "81.08%"
+  },
+  "files": [
+    {
+      "name": "rehabilitering-griff-entreprenor-19.jpg",
+      "folder": "Rehabilitering",
+      "originalSize": 3794437,
+      "compressedSize": 251558,
+      "savings": 93.37
+    },
+    {
+      "name": "rehabilitering-griff-entreprenor-17.jpg",
+      "folder": "Rehabilitering",
+      "originalSize": 4468644,
+      "compressedSize": 314328,
+      "savings": 92.97
+    },
+    {
+      "name": "rehabilitering-griff-entreprenor-15.jpg",
+      "folder": "Rehabilitering",
+      "originalSize": 4554744,
+      "compressedSize": 323623,
+      "savings": 92.89
+    },
+    {
+      "name": "rehabilitering-griff-entreprenor-14.jpg",
+      "folder": "Rehabilitering",
+      "originalSize": 4984659,
+      "compressedSize": 357232,
+      "savings": 92.83
+    },
+    {
+      "name": "01-header-rehabilitering-griff-entreprenor.jpg",
+      "folder": "Rehabilitering",
+      "originalSize": 5392107,
+      "compressedSize": 393105,
+      "savings": 92.71
+    },
+    {
+      "name": "rehabilitering-griff-entreprenor-18.jpg",
+      "folder": "Rehabilitering",
+      "originalSize": 4807731,
+      "compressedSize": 361541,
+      "savings": 92.48
+    },
+    {
+      "name": "rehabilitering-griff-entreprenor-16.jpg",
+      "folder": "Rehabilitering",
+      "originalSize": 5400058,
+      "compressedSize": 422127,
+      "savings": 92.18
+    },
+    {
+      "name": "rehabilitering-griff-entreprenor-13.jpg",
+      "folder": "Rehabilitering",
+      "originalSize": 4368992,
+      "compressedSize": 354736,
+      "savings": 91.88
+    },
+    {
+      "name": "rehabilitering-griff-entreprenor-12.jpg",
+      "folder": "Rehabilitering",
+      "originalSize": 3891104,
+      "compressedSize": 326870,
+      "savings": 91.6
+    },
+    {
+      "name": "vinduer-griff-entreprenor-04.jpg",
+      "folder": "Vinduer",
+      "originalSize": 5061234,
+      "compressedSize": 426264,
+      "savings": 91.58
+    },
+    {
+      "name": "rehabilitering-griff-entreprenor-10.jpg",
+      "folder": "Rehabilitering",
+      "originalSize": 5123340,
+      "compressedSize": 453283,
+      "savings": 91.15
+    },
+    {
+      "name": "rehabilitering-griff-entreprenor-02.jpg",
+      "folder": "Rehabilitering",
+      "originalSize": 6738541,
+      "compressedSize": 597892,
+      "savings": 91.13
+    },
+    {
+      "name": "rehabilitering-griff-entreprenor-05.jpg",
+      "folder": "Rehabilitering",
+      "originalSize": 4921867,
+      "compressedSize": 480863,
+      "savings": 90.23
+    },
+    {
+      "name": "rehabilitering-griff-entreprenor-04.jpg",
+      "folder": "Rehabilitering",
+      "originalSize": 4855476,
+      "compressedSize": 485030,
+      "savings": 90.01
+    },
+    {
+      "name": "vinduer-griff-entreprenor-07.jpg",
+      "folder": "Vinduer",
+      "originalSize": 7311564,
+      "compressedSize": 746777,
+      "savings": 89.79
+    },
+    {
+      "name": "rehabilitering-griff-entreprenor-03.jpg",
+      "folder": "Rehabilitering",
+      "originalSize": 5000957,
+      "compressedSize": 512497,
+      "savings": 89.75
+    },
+    {
+      "name": "vinduer-griff-entreprenor-05.jpg",
+      "folder": "Vinduer",
+      "originalSize": 4658945,
+      "compressedSize": 482463,
+      "savings": 89.64
+    },
+    {
+      "name": "rehabilitering-griff-entreprenor-06.jpg",
+      "folder": "Rehabilitering",
+      "originalSize": 5722980,
+      "compressedSize": 619661,
+      "savings": 89.17
+    },
+    {
+      "name": "tilbygg-griff-entreprenor-08.jpg",
+      "folder": "Tilbygg",
+      "originalSize": 5993339,
+      "compressedSize": 702710,
+      "savings": 88.28
+    },
+    {
+      "name": "vinduer-griff-entreprenor-02.jpg",
+      "folder": "Vinduer",
+      "originalSize": 5993339,
+      "compressedSize": 702710,
+      "savings": 88.28
+    },
+    {
+      "name": "tilbygg-griff-entreprenor-05.jpg",
+      "folder": "Tilbygg",
+      "originalSize": 6819201,
+      "compressedSize": 831131,
+      "savings": 87.81
+    },
+    {
+      "name": "bad-vatrom-griff-entreprenor-05.webp",
+      "folder": "Bad og våtrom",
+      "originalSize": 1714220,
+      "compressedSize": 211854,
+      "savings": 87.64
+    },
+    {
+      "name": "tilbygg-griff-entreprenor-06.jpg",
+      "folder": "Tilbygg",
+      "originalSize": 7708743,
+      "compressedSize": 1032506,
+      "savings": 86.61
+    },
+    {
+      "name": "tilbygg-griff-entreprenor-03.jpg",
+      "folder": "Tilbygg",
+      "originalSize": 3459629,
+      "compressedSize": 491397,
+      "savings": 85.8
+    },
+    {
+      "name": "rehabilitering-griff-entreprenor-09.jpg",
+      "folder": "Rehabilitering",
+      "originalSize": 2583166,
+      "compressedSize": 481694,
+      "savings": 81.35
+    },
+    {
+      "name": "tilbygg-griff-entreprenor-07.jpg",
+      "folder": "Tilbygg",
+      "originalSize": 2583166,
+      "compressedSize": 481694,
+      "savings": 81.35
+    },
+    {
+      "name": "tilbygg-griff-entreprenor-42.jpg",
+      "folder": "Tilbygg",
+      "originalSize": 2686198,
+      "compressedSize": 526352,
+      "savings": 80.41
+    },
+    {
+      "name": "rehabilitering-griff-entreprenor-08.jpg",
+      "folder": "Rehabilitering",
+      "originalSize": 3692964,
+      "compressedSize": 749083,
+      "savings": 79.72
+    },
+    {
+      "name": "nybygg-griff-entreprenor-04.jpg",
+      "folder": "Nybygg",
+      "originalSize": 1925519,
+      "compressedSize": 395312,
+      "savings": 79.47
+    },
+    {
+      "name": "01-header-nybygg-griff-entreprenor.png",
+      "folder": "Nybygg",
+      "originalSize": 748821,
+      "compressedSize": 214520,
+      "savings": 71.35
+    },
+    {
+      "name": "nybygg-griff-entreprenor-05.jpg",
+      "folder": "Nybygg",
+      "originalSize": 1638002,
+      "compressedSize": 499866,
+      "savings": 69.48
+    },
+    {
+      "name": "nybygg-griff-entreprenor-06.jpg",
+      "folder": "Nybygg",
+      "originalSize": 857830,
+      "compressedSize": 328301,
+      "savings": 61.73
+    },
+    {
+      "name": "rehabilitering-griff-entreprenor-23.jpg",
+      "folder": "Rehabilitering",
+      "originalSize": 277835,
+      "compressedSize": 116227,
+      "savings": 58.17
+    },
+    {
+      "name": "rehabilitering-griff-entreprenor-24.jpg",
+      "folder": "Rehabilitering",
+      "originalSize": 141294,
+      "compressedSize": 59285,
+      "savings": 58.04
+    },
+    {
+      "name": "rehabilitering-griff-entreprenor-25.jpg",
+      "folder": "Rehabilitering",
+      "originalSize": 183396,
+      "compressedSize": 79216,
+      "savings": 56.81
+    },
+    {
+      "name": "bad-vatrom-griff-entreprenor-07.jpg",
+      "folder": "Bad og våtrom",
+      "originalSize": 956510,
+      "compressedSize": 414753,
+      "savings": 56.64
+    },
+    {
+      "name": "terrasse-griff-entreprenor-11.jpg",
+      "folder": "Terrasse",
+      "originalSize": 70651,
+      "compressedSize": 32552,
+      "savings": 53.93
+    },
+    {
+      "name": "terrasse-griff-entreprenor-10.jpg",
+      "folder": "Terrasse",
+      "originalSize": 404890,
+      "compressedSize": 308104,
+      "savings": 23.9
+    },
+    {
+      "name": "01-header-garasje-griff-entreprenor.jpg",
+      "folder": "Garasje",
+      "originalSize": 82573,
+      "compressedSize": 67226,
+      "savings": 18.59
+    },
+    {
+      "name": "tilbygg-griff-entreprenor-02.jpg",
+      "folder": "Tilbygg",
+      "originalSize": 82573,
+      "compressedSize": 67226,
+      "savings": 18.59
+    },
+    {
+      "name": "vinduer-griff-entreprenor-08.jpg",
+      "folder": "Vinduer",
+      "originalSize": 143965,
+      "compressedSize": 119268,
+      "savings": 17.15
+    },
+    {
+      "name": "01-header-terrasse-griff-entreprenor.jpg",
+      "folder": "Terrasse",
+      "originalSize": 201074,
+      "compressedSize": 169458,
+      "savings": 15.72
+    },
+    {
+      "name": "tilbygg-griff-entreprenor-14.jpg",
+      "folder": "Tilbygg",
+      "originalSize": 201074,
+      "compressedSize": 169458,
+      "savings": 15.72
+    },
+    {
+      "name": "terrasse-griff-entreprenor-07.jpg",
+      "folder": "Terrasse",
+      "originalSize": 111381,
+      "compressedSize": 94042,
+      "savings": 15.57
+    },
+    {
+      "name": "tilbygg-griff-entreprenor-10.jpg",
+      "folder": "Tilbygg",
+      "originalSize": 133071,
+      "compressedSize": 112576,
+      "savings": 15.4
+    },
+    {
+      "name": "rehabilitering-griff-entreprenor-07.jpg",
+      "folder": "Rehabilitering",
+      "originalSize": 60794,
+      "compressedSize": 51522,
+      "savings": 15.25
+    },
+    {
+      "name": "terrasse-griff-entreprenor-08.jpg",
+      "folder": "Terrasse",
+      "originalSize": 223512,
+      "compressedSize": 189768,
+      "savings": 15.1
+    },
+    {
+      "name": "tilbygg-griff-entreprenor-12.jpg",
+      "folder": "Tilbygg",
+      "originalSize": 84723,
+      "compressedSize": 72104,
+      "savings": 14.89
+    },
+    {
+      "name": "terrasse-griff-entreprenor-05.jpg",
+      "folder": "Terrasse",
+      "originalSize": 80178,
+      "compressedSize": 68874,
+      "savings": 14.1
+    },
+    {
+      "name": "vinduer-griff-entreprenor-11.jpg",
+      "folder": "Vinduer",
+      "originalSize": 80178,
+      "compressedSize": 68874,
+      "savings": 14.1
+    },
+    {
+      "name": "bad-vatrom-griff-entreprenor-02.webp",
+      "folder": "Bad og våtrom",
+      "originalSize": 25754,
+      "compressedSize": 22140,
+      "savings": 14.03
+    },
+    {
+      "name": "tilbygg-griff-entreprenor-11.jpg",
+      "folder": "Tilbygg",
+      "originalSize": 155498,
+      "compressedSize": 133880,
+      "savings": 13.9
+    },
+    {
+      "name": "tilbygg-griff-entreprenor-45.jpg",
+      "folder": "Tilbygg",
+      "originalSize": 146873,
+      "compressedSize": 126460,
+      "savings": 13.9
+    },
+    {
+      "name": "tilbygg-griff-entreprenor-44.jpg",
+      "folder": "Tilbygg",
+      "originalSize": 151846,
+      "compressedSize": 130898,
+      "savings": 13.8
+    },
+    {
+      "name": "tilbygg-griff-entreprenor-15.jpg",
+      "folder": "Tilbygg",
+      "originalSize": 157287,
+      "compressedSize": 135865,
+      "savings": 13.62
+    },
+    {
+      "name": "tilbygg-griff-entreprenor-13.jpg",
+      "folder": "Tilbygg",
+      "originalSize": 129074,
+      "compressedSize": 111897,
+      "savings": 13.31
+    },
+    {
+      "name": "terrasse-griff-entreprenor-09.jpg",
+      "folder": "Terrasse",
+      "originalSize": 138875,
+      "compressedSize": 120560,
+      "savings": 13.19
+    },
+    {
+      "name": "terrasse-griff-entreprenor-03.jpg",
+      "folder": "Terrasse",
+      "originalSize": 129701,
+      "compressedSize": 112729,
+      "savings": 13.09
+    },
+    {
+      "name": "vinduer-griff-entreprenor-09.jpg",
+      "folder": "Vinduer",
+      "originalSize": 129701,
+      "compressedSize": 112729,
+      "savings": 13.09
+    },
+    {
+      "name": "terrasse-griff-entreprenor-04.jpg",
+      "folder": "Terrasse",
+      "originalSize": 120020,
+      "compressedSize": 104487,
+      "savings": 12.94
+    },
+    {
+      "name": "vinduer-griff-entreprenor-10.jpg",
+      "folder": "Vinduer",
+      "originalSize": 120020,
+      "compressedSize": 104487,
+      "savings": 12.94
+    },
+    {
+      "name": "tilbygg-griff-entreprenor-09.jpg",
+      "folder": "Tilbygg",
+      "originalSize": 132905,
+      "compressedSize": 116243,
+      "savings": 12.54
+    },
+    {
+      "name": "tilbygg-griff-entreprenor-43.jpg",
+      "folder": "Tilbygg",
+      "originalSize": 85838,
+      "compressedSize": 75106,
+      "savings": 12.5
+    },
+    {
+      "name": "01-header-bad-vatrom-griff-entreprenor.webp",
+      "folder": "Bad og våtrom",
+      "originalSize": 18626,
+      "compressedSize": 16356,
+      "savings": 12.19
+    },
+    {
+      "name": "garasje-griff-entreprenor-02.jpg",
+      "folder": "Garasje",
+      "originalSize": 90448,
+      "compressedSize": 80054,
+      "savings": 11.49
+    },
+    {
+      "name": "bad-vatrom-griff-entreprenor-04.jpg",
+      "folder": "Bad og våtrom",
+      "originalSize": 68324,
+      "compressedSize": 60797,
+      "savings": 11.02
+    },
+    {
+      "name": "vinduer-griff-entreprenor-03.jpg",
+      "folder": "Vinduer",
+      "originalSize": 68324,
+      "compressedSize": 60797,
+      "savings": 11.02
+    },
+    {
+      "name": "garasje-griff-entreprenor-03.jpg",
+      "folder": "Garasje",
+      "originalSize": 89321,
+      "compressedSize": 79925,
+      "savings": 10.52
+    },
+    {
+      "name": "terrasse-griff-entreprenor-02.jpg",
+      "folder": "Terrasse",
+      "originalSize": 139982,
+      "compressedSize": 125533,
+      "savings": 10.32
+    },
+    {
+      "name": "tilbygg-griff-entreprenor-04.jpg",
+      "folder": "Tilbygg",
+      "originalSize": 56883,
+      "compressedSize": 51107,
+      "savings": 10.15
+    },
+    {
+      "name": "rehabilitering-griff-entreprenor-11.jpg",
+      "folder": "Rehabilitering",
+      "originalSize": 386147,
+      "compressedSize": 347409,
+      "savings": 10.03
+    },
+    {
+      "name": "nybygg-griff-entreprenor-03.jpg",
+      "folder": "Nybygg",
+      "originalSize": 48542,
+      "compressedSize": 43686,
+      "savings": 10
+    },
+    {
+      "name": "01-header-vinduer-griff-entreprenor.jpg",
+      "folder": "Vinduer",
+      "originalSize": 125402,
+      "compressedSize": 113131,
+      "savings": 9.79
+    },
+    {
+      "name": "vinduer-griff-entreprenor-06.jpg",
+      "folder": "Vinduer",
+      "originalSize": 131478,
+      "compressedSize": 119440,
+      "savings": 9.16
+    },
+    {
+      "name": "bad-vatrom-griff-entreprenor-08.jpg",
+      "folder": "Bad og våtrom",
+      "originalSize": 60282,
+      "compressedSize": 55359,
+      "savings": 8.17
+    },
+    {
+      "name": "bad-vatrom-griff-entreprenor-09.webp",
+      "folder": "Bad og våtrom",
+      "originalSize": 61306,
+      "compressedSize": 57340,
+      "savings": 6.47
+    },
+    {
+      "name": "nybygg-griff-entreprenor-02.jpeg",
+      "folder": "Nybygg",
+      "originalSize": 57796,
+      "compressedSize": 54494,
+      "savings": 5.71
+    },
+    {
+      "name": "bad-vatrom-griff-entreprenor-03.jpeg",
+      "folder": "Bad og våtrom",
+      "originalSize": 21932,
+      "compressedSize": 20699,
+      "savings": 5.62
+    },
+    {
+      "name": "bad-vatrom-griff-entreprenor-10.webp",
+      "folder": "Bad og våtrom",
+      "originalSize": 117992,
+      "compressedSize": 111656,
+      "savings": 5.37
+    },
+    {
+      "name": "tilbygg-griff-entreprenor-20.jpg",
+      "folder": "Tilbygg",
+      "originalSize": 184323,
+      "compressedSize": 177492,
+      "savings": 3.71
+    },
+    {
+      "name": "tilbygg-griff-entreprenor-19.jpg",
+      "folder": "Tilbygg",
+      "originalSize": 296146,
+      "compressedSize": 290864,
+      "savings": 1.78
+    },
+    {
+      "name": "tilbygg-griff-entreprenor-36.jpg",
+      "folder": "Tilbygg",
+      "originalSize": 154202,
+      "compressedSize": 151616,
+      "savings": 1.68
+    },
+    {
+      "name": "tilbygg-griff-entreprenor-41.jpg",
+      "folder": "Tilbygg",
+      "originalSize": 160956,
+      "compressedSize": 158520,
+      "savings": 1.51
+    },
+    {
+      "name": "rehabilitering-griff-entreprenor-22.jpg",
+      "folder": "Rehabilitering",
+      "originalSize": 194615,
+      "compressedSize": 191894,
+      "savings": 1.4
+    },
+    {
+      "name": "tilbygg-griff-entreprenor-37.jpg",
+      "folder": "Tilbygg",
+      "originalSize": 199768,
+      "compressedSize": 197551,
+      "savings": 1.11
+    },
+    {
+      "name": "tilbygg-griff-entreprenor-29.jpg",
+      "folder": "Tilbygg",
+      "originalSize": 234116,
+      "compressedSize": 231610,
+      "savings": 1.07
+    },
+    {
+      "name": "tilbygg-griff-entreprenor-35.jpg",
+      "folder": "Tilbygg",
+      "originalSize": 142832,
+      "compressedSize": 141309,
+      "savings": 1.07
+    },
+    {
+      "name": "rehabilitering-griff-entreprenor-20.jpg",
+      "folder": "Rehabilitering",
+      "originalSize": 192726,
+      "compressedSize": 190985,
+      "savings": 0.9
+    },
+    {
+      "name": "tilbygg-griff-entreprenor-17.jpg",
+      "folder": "Tilbygg",
+      "originalSize": 302987,
+      "compressedSize": 300440,
+      "savings": 0.84
+    },
+    {
+      "name": "tilbygg-griff-entreprenor-21.jpg",
+      "folder": "Tilbygg",
+      "originalSize": 285939,
+      "compressedSize": 283873,
+      "savings": 0.72
+    },
+    {
+      "name": "tilbygg-griff-entreprenor-38.jpg",
+      "folder": "Tilbygg",
+      "originalSize": 198647,
+      "compressedSize": 197264,
+      "savings": 0.7
+    },
+    {
+      "name": "tilbygg-griff-entreprenor-16.jpg",
+      "folder": "Tilbygg",
+      "originalSize": 322611,
+      "compressedSize": 320513,
+      "savings": 0.65
+    },
+    {
+      "name": "tilbygg-griff-entreprenor-27.jpg",
+      "folder": "Tilbygg",
+      "originalSize": 253782,
+      "compressedSize": 252168,
+      "savings": 0.64
+    },
+    {
+      "name": "rehabilitering-griff-entreprenor-21.jpg",
+      "folder": "Rehabilitering",
+      "originalSize": 181407,
+      "compressedSize": 180379,
+      "savings": 0.57
+    },
+    {
+      "name": "tilbygg-griff-entreprenor-25.jpg",
+      "folder": "Tilbygg",
+      "originalSize": 231144,
+      "compressedSize": 230103,
+      "savings": 0.45
+    },
+    {
+      "name": "tilbygg-griff-entreprenor-22.jpg",
+      "folder": "Tilbygg",
+      "originalSize": 301295,
+      "compressedSize": 299989,
+      "savings": 0.43
+    },
+    {
+      "name": "tilbygg-griff-entreprenor-23.jpg",
+      "folder": "Tilbygg",
+      "originalSize": 238839,
+      "compressedSize": 237923,
+      "savings": 0.38
+    },
+    {
+      "name": "tilbygg-griff-entreprenor-18.jpg",
+      "folder": "Tilbygg",
+      "originalSize": 274540,
+      "compressedSize": 273531,
+      "savings": 0.37
+    },
+    {
+      "name": "tilbygg-griff-entreprenor-24.jpg",
+      "folder": "Tilbygg",
+      "originalSize": 306984,
+      "compressedSize": 305906,
+      "savings": 0.35
+    },
+    {
+      "name": "01-header-tilbygg-griff-entreprenor.jpg",
+      "folder": "Tilbygg",
+      "originalSize": 190077,
+      "compressedSize": 189454,
+      "savings": 0.33
+    },
+    {
+      "name": "tilbygg-griff-entreprenor-28.jpg",
+      "folder": "Tilbygg",
+      "originalSize": 155160,
+      "compressedSize": 154652,
+      "savings": 0.33
+    },
+    {
+      "name": "tilbygg-griff-entreprenor-34.jpg",
+      "folder": "Tilbygg",
+      "originalSize": 167447,
+      "compressedSize": 166900,
+      "savings": 0.33
+    },
+    {
+      "name": "tilbygg-griff-entreprenor-40.jpg",
+      "folder": "Tilbygg",
+      "originalSize": 289648,
+      "compressedSize": 288975,
+      "savings": 0.23
+    },
+    {
+      "name": "tilbygg-griff-entreprenor-39.jpg",
+      "folder": "Tilbygg",
+      "originalSize": 257327,
+      "compressedSize": 257127,
+      "savings": 0.08
+    },
+    {
+      "name": "tilbygg-griff-entreprenor-26.jpg",
+      "folder": "Tilbygg",
+      "originalSize": 241982,
+      "compressedSize": 241900,
+      "savings": 0.03
+    },
+    {
+      "name": "tilbygg-griff-entreprenor-32.jpg",
+      "folder": "Tilbygg",
+      "originalSize": 339503,
+      "compressedSize": 340573,
+      "savings": -0.32
+    },
+    {
+      "name": "vinduer-griff-entreprenor-17.jpg",
+      "folder": "Vinduer",
+      "originalSize": 339503,
+      "compressedSize": 340573,
+      "savings": -0.32
+    },
+    {
+      "name": "tilbygg-griff-entreprenor-33.jpg",
+      "folder": "Tilbygg",
+      "originalSize": 210773,
+      "compressedSize": 211538,
+      "savings": -0.36
+    },
+    {
+      "name": "vinduer-griff-entreprenor-18.jpg",
+      "folder": "Vinduer",
+      "originalSize": 210773,
+      "compressedSize": 211538,
+      "savings": -0.36
+    },
+    {
+      "name": "tilbygg-griff-entreprenor-30.jpg",
+      "folder": "Tilbygg",
+      "originalSize": 215227,
+      "compressedSize": 216960,
+      "savings": -0.81
+    },
+    {
+      "name": "vinduer-griff-entreprenor-15.jpg",
+      "folder": "Vinduer",
+      "originalSize": 215227,
+      "compressedSize": 216960,
+      "savings": -0.81
+    },
+    {
+      "name": "tilbygg-griff-entreprenor-31.jpg",
+      "folder": "Tilbygg",
+      "originalSize": 242433,
+      "compressedSize": 244775,
+      "savings": -0.97
+    },
+    {
+      "name": "vinduer-griff-entreprenor-16.jpg",
+      "folder": "Vinduer",
+      "originalSize": 242433,
+      "compressedSize": 244775,
+      "savings": -0.97
+    },
+    {
+      "name": "bad-vatrom-griff-entreprenor-06.webp",
+      "folder": "Bad og våtrom",
+      "originalSize": 16506,
+      "compressedSize": 16822,
+      "savings": -1.91
+    },
+    {
+      "name": "terrasse-griff-entreprenor-06.jpg",
+      "folder": "Terrasse",
+      "originalSize": 155105,
+      "compressedSize": 173006,
+      "savings": -11.54
+    },
+    {
+      "name": "vinduer-griff-entreprenor-13.jpg",
+      "folder": "Vinduer",
+      "originalSize": 155105,
+      "compressedSize": 173006,
+      "savings": -11.54
+    },
+    {
+      "name": "vinduer-griff-entreprenor-12.jpg",
+      "folder": "Vinduer",
+      "originalSize": 159869,
+      "compressedSize": 178611,
+      "savings": -11.72
+    },
+    {
+      "name": "vinduer-griff-entreprenor-14.jpg",
+      "folder": "Vinduer",
+      "originalSize": 163423,
+      "compressedSize": 182718,
+      "savings": -11.81
+    }
+  ]
+}
