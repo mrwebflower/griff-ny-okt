@@ -1,0 +1,235 @@
+{
+  "timestamp": "2025-10-15T20:38:08.611Z",
+  "articlesProcessed": 25,
+  "articlesUpdated": 25,
+  "articlesFailed": 0,
+  "imagesAdded": 46,
+  "imagesReplaced": 35,
+  "details": [
+    {
+      "filename": "bad-vatrom-griff.html",
+      "status": "success",
+      "category": "Bad og våtrom",
+      "heroAdded": true,
+      "bodyImagesAdded": 1,
+      "bodyImagesReplaced": 0,
+      "error": null
+    },
+    {
+      "filename": "byggesoknad-trondheim-veiledning.html",
+      "status": "success",
+      "category": "Garasje",
+      "heroAdded": true,
+      "bodyImagesAdded": 0,
+      "bodyImagesReplaced": 3,
+      "error": null
+    },
+    {
+      "filename": "flislegging-trondheim-tips.html",
+      "status": "success",
+      "category": "Bad og våtrom",
+      "heroAdded": true,
+      "bodyImagesAdded": 2,
+      "bodyImagesReplaced": 0,
+      "error": null
+    },
+    {
+      "filename": "fukt-i-hjem.html",
+      "status": "success",
+      "category": "Rehabilitering",
+      "heroAdded": true,
+      "bodyImagesAdded": 0,
+      "bodyImagesReplaced": 3,
+      "error": null
+    },
+    {
+      "filename": "fuktproblemer-kjeller-forebygging.html",
+      "status": "success",
+      "category": "Rehabilitering",
+      "heroAdded": true,
+      "bodyImagesAdded": 3,
+      "bodyImagesReplaced": 0,
+      "error": null
+    },
+    {
+      "filename": "garasje-bygging-griff.html",
+      "status": "success",
+      "category": "Garasje",
+      "heroAdded": true,
+      "bodyImagesAdded": 0,
+      "bodyImagesReplaced": 1,
+      "error": null
+    },
+    {
+      "filename": "garasje-trondheim.html",
+      "status": "success",
+      "category": "Garasje",
+      "heroAdded": true,
+      "bodyImagesAdded": 0,
+      "bodyImagesReplaced": 3,
+      "error": null
+    },
+    {
+      "filename": "isolering-trondheim.html",
+      "status": "success",
+      "category": "Rehabilitering",
+      "heroAdded": true,
+      "bodyImagesAdded": 0,
+      "bodyImagesReplaced": 1,
+      "error": null
+    },
+    {
+      "filename": "kostnadsberegning-baderomsrenovering-trondheim.html",
+      "status": "success",
+      "category": "Bad og våtrom",
+      "heroAdded": true,
+      "bodyImagesAdded": 3,
+      "bodyImagesReplaced": 0,
+      "error": null
+    },
+    {
+      "filename": "kostnadseffektiv-garasjebygging-trondheim.html",
+      "status": "success",
+      "category": "Garasje",
+      "heroAdded": true,
+      "bodyImagesAdded": 0,
+      "bodyImagesReplaced": 2,
+      "error": null
+    },
+    {
+      "filename": "malearbeid-griff.html",
+      "status": "success",
+      "category": "Rehabilitering",
+      "heroAdded": true,
+      "bodyImagesAdded": 1,
+      "bodyImagesReplaced": 0,
+      "error": null
+    },
+    {
+      "filename": "moderne-bad-design-trondheim.html",
+      "status": "success",
+      "category": "Nybygg",
+      "heroAdded": true,
+      "bodyImagesAdded": 3,
+      "bodyImagesReplaced": 0,
+      "error": null
+    },
+    {
+      "filename": "nybygg-investere.html",
+      "status": "success",
+      "category": "Nybygg",
+      "heroAdded": true,
+      "bodyImagesAdded": 3,
+      "bodyImagesReplaced": 0,
+      "error": null
+    },
+    {
+      "filename": "nybygg-trondheim.html",
+      "status": "success",
+      "category": "Nybygg",
+      "heroAdded": true,
+      "bodyImagesAdded": 1,
+      "bodyImagesReplaced": 0,
+      "error": null
+    },
+    {
+      "filename": "rehabilitering-trondheim-generell.html",
+      "status": "success",
+      "category": "Rehabilitering",
+      "heroAdded": true,
+      "bodyImagesAdded": 0,
+      "bodyImagesReplaced": 1,
+      "error": null
+    },
+    {
+      "filename": "rehabilitering-trondheim.html",
+      "status": "success",
+      "category": "Rehabilitering",
+      "heroAdded": true,
+      "bodyImagesAdded": 0,
+      "bodyImagesReplaced": 2,
+      "error": null
+    },
+    {
+      "filename": "riktig-ventilasjon-moderne-hus.html",
+      "status": "success",
+      "category": "Vinduer",
+      "heroAdded": true,
+      "bodyImagesAdded": 3,
+      "bodyImagesReplaced": 0,
+      "error": null
+    },
+    {
+      "filename": "smarte-losninger-sma-bad-trondheim.html",
+      "status": "success",
+      "category": "Bad og våtrom",
+      "heroAdded": true,
+      "bodyImagesAdded": 3,
+      "bodyImagesReplaced": 0,
+      "error": null
+    },
+    {
+      "filename": "snekkerarbeid-dyi.html",
+      "status": "success",
+      "category": "Tilbygg",
+      "heroAdded": true,
+      "bodyImagesAdded": 3,
+      "bodyImagesReplaced": 0,
+      "error": null
+    },
+    {
+      "filename": "snekkerarbeid-feng-shui.html",
+      "status": "success",
+      "category": "Tilbygg",
+      "heroAdded": true,
+      "bodyImagesAdded": 3,
+      "bodyImagesReplaced": 0,
+      "error": null
+    },
+    {
+      "filename": "snekkerarbeid-trondheim-generell.html",
+      "status": "success",
+      "category": "Tilbygg",
+      "heroAdded": true,
+      "bodyImagesAdded": 1,
+      "bodyImagesReplaced": 0,
+      "error": null
+    },
+    {
+      "filename": "terrasse-investering.html",
+      "status": "success",
+      "category": "Terrasse",
+      "heroAdded": true,
+      "bodyImagesAdded": 0,
+      "bodyImagesReplaced": 2,
+      "error": null
+    },
+    {
+      "filename": "terrasse-trondheim-bygging.html",
+      "status": "success",
+      "category": "Terrasse",
+      "heroAdded": true,
+      "bodyImagesAdded": 0,
+      "bodyImagesReplaced": 3,
+      "error": null
+    },
+    {
+      "filename": "tilbygg-bolig-trondheim.html",
+      "status": "success",
+      "category": "Tilbygg",
+      "heroAdded": true,
+      "bodyImagesAdded": 0,
+      "bodyImagesReplaced": 3,
+      "error": null
+    },
+    {
+      "filename": "utvendig-maling-hus-trondheim.html",
+      "status": "success",
+      "category": "Rehabilitering",
+      "heroAdded": true,
+      "bodyImagesAdded": 2,
+      "bodyImagesReplaced": 0,
+      "error": null
+    }
+  ]
+}
