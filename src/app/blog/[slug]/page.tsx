@@ -6,16 +6,16 @@ import path from "node:path";
 
 // Category mapping (service → folder name)
 const CATEGORY_MAPPING: Record<string, string> = {
-  'Bad': 'bad-og-våtrom',
-  'Våtrom': 'bad-og-våtrom',
-  'Bad og våtrom': 'bad-og-våtrom',
+  'Bad': 'bad-og-vatrom',
+  'Våtrom': 'bad-og-vatrom',
+  'Bad og våtrom': 'bad-og-vatrom',
   'Garasje': 'garasje',
   'Tilbygg': 'tilbygg',
   'Nybygg': 'nybygg',
   'Rehabilitering': 'rehabilitering',
   'Terrasse': 'terrasse',
   'Vinduer': 'vinduer',
-  'Flislegging': 'bad-og-våtrom',
+  'Flislegging': 'bad-og-vatrom',
   'Isolering': 'rehabilitering',
   'Malearbeid': 'rehabilitering',
   'Snekkerarbeid': 'tilbygg',
@@ -24,7 +24,7 @@ const CATEGORY_MAPPING: Record<string, string> = {
 
 // Header image mapping (category → optimized header image path)
 const HEADER_IMAGES: Record<string, string> = {
-  'bad-og-våtrom': '/images/optimized/bad-og-våtrom/01-header-bad-vatrom-griff-entreprenor.webp',
+  'bad-og-vatrom': '/images/optimized/bad-og-vatrom/01-header-bad-vatrom-griff-entreprenor.webp',
   'garasje': '/images/optimized/garasje/01-header-garasje-griff-entreprenor.jpg',
   'nybygg': '/images/optimized/nybygg/01-header-nybygg-griff-entreprenor.webp',
   'rehabilitering': '/images/optimized/rehabilitering/01-header-rehabilitering-griff-entreprenor.jpg',
