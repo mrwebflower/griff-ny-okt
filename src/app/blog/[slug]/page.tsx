@@ -4,6 +4,35 @@ import type { Metadata } from "next";
 import fs from "node:fs";
 import path from "node:path";
 
+// Category mapping (service → folder name)
+const CATEGORY_MAPPING: Record<string, string> = {
+  'Bad': 'bad-og-våtrom',
+  'Våtrom': 'bad-og-våtrom',
+  'Bad og våtrom': 'bad-og-våtrom',
+  'Garasje': 'garasje',
+  'Tilbygg': 'tilbygg',
+  'Nybygg': 'nybygg',
+  'Rehabilitering': 'rehabilitering',
+  'Terrasse': 'terrasse',
+  'Vinduer': 'vinduer',
+  'Flislegging': 'bad-og-våtrom',
+  'Isolering': 'rehabilitering',
+  'Malearbeid': 'rehabilitering',
+  'Snekkerarbeid': 'tilbygg',
+  'Utvendig maling': 'rehabilitering'
+};
+
+// Header image mapping (category → optimized header image path)
+const HEADER_IMAGES: Record<string, string> = {
+  'bad-og-våtrom': '/images/optimized/bad-og-våtrom/01-header-bad-vatrom-griff-entreprenor.webp',
+  'garasje': '/images/optimized/garasje/01-header-garasje-griff-entreprenor.jpg',
+  'nybygg': '/images/optimized/nybygg/01-header-nybygg-griff-entreprenor.webp',
+  'rehabilitering': '/images/optimized/rehabilitering/01-header-rehabilitering-griff-entreprenor.jpg',
+  'terrasse': '/images/optimized/terrasse/01-header-terrasse-griff-entreprenor.jpg',
+  'tilbygg': '/images/optimized/tilbygg/01-header-tilbygg-griff-entreprenor.jpg',
+  'vinduer': '/images/optimized/vinduer/01-header-vinduer-griff-entreprenor.jpg'
+};
+
 // This will handle both manual articles and imported HTML files
 const getArticleContent = async (slug: string) => {
   // Check for imported HTML files first
@@ -26,8 +55,16 @@ const getArticleContent = async (slug: string) => {
       const descMatch = html.match(/<p[^>]*>([^<]+)<\/p>/i);
       const description = `${descMatch?.[1]?.substring(0, 160)}...` || "Profesjonell veiledning fra Griffentreprenor";
 
-      // Determine category from services or content
+      // Extract services and map to optimized image category
       const services = metaServicesMatch?.[1] || "";
+      const serviceParts = services.split(',').map(s => s.trim());
+      const primaryService = serviceParts[0] || 'Rehabilitering';
+      const mappedCategory = CATEGORY_MAPPING[primaryService] || 'rehabilitering';
+
+      // Get optimized header image for this category
+      const image = HEADER_IMAGES[mappedCategory] || HEADER_IMAGES['rehabilitering'];
+
+      // Determine category label for display
       let category = "Byggetips";
       if (services.toLowerCase().includes("bad") || services.toLowerCase().includes("våtrom")) {
         category = "Våtrom";
@@ -49,7 +86,7 @@ const getArticleContent = async (slug: string) => {
         publishedDate: new Date().toISOString().split('T')[0], // Default to current date
         keywords: `${title}, Trondheim, entreprenør, bygg, ${category.toLowerCase()}`,
         articleId: metaIdMatch?.[1] || slug,
-        image: "https://ext.same-assets.com/4166723710/4128430851.jpeg" // Default image
+        image // Now uses optimized category-specific header image
       };
     };
 
