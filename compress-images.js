@@ -79,6 +79,9 @@ async function processImage(inputPath, outputPath, ext) {
     // Get metadata
     const metadata = await image.metadata();
 
+    // Apply EXIF orientation (auto-rotate based on EXIF before resizing)
+    image = image.rotate();
+
     // Resize if needed
     if (CONFIG.maxWidth || CONFIG.maxHeight) {
       const resizeOptions = {};
@@ -163,6 +166,9 @@ async function processFolder(folderName) {
 
   console.log(`\n📁 Processing: ${folderName}`);
   console.log('─'.repeat(60));
+
+  // Create output directory if it doesn't exist
+  await fs.mkdir(outputPath, { recursive: true });
 
   try {
     const files = await fs.readdir(sourcePath);
