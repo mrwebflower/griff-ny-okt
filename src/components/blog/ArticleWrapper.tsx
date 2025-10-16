@@ -95,9 +95,9 @@ export default function ArticleWrapper({
     .replace(/<a([^>]*href[^>]*)>/g, '<a$1 class="text-primary hover:underline transition-colors font-medium">')
     // Style special boxes and callouts
     .replace(/class="intro"/g, 'class="bg-blue-50 border-l-4 border-primary p-6 rounded-r-lg mb-8 text-slate-800"')
-    // Add responsive images
-    .replace(/<img([^>]*class="[^"]*article-image[^"]*"[^>]*)>/g, '<img$1 class="w-full rounded-xl my-8 shadow-lg">')
-    .replace(/<img(?![^>]*class=)([^>]*)>/g, '<img$1 class="w-full rounded-xl my-8 shadow-lg">');
+    // Add responsive images with orientation fix for mobile browsers
+    .replace(/<img([^>]*class="[^"]*article-image[^"]*"[^>]*)>/g, '<img$1 style="image-orientation: from-image; max-width: 100%; height: auto;" class="w-full rounded-xl my-8 shadow-lg">')
+    .replace(/<img(?![^>]*class=)([^>]*)>/g, '<img$1 style="image-orientation: from-image; max-width: 100%; height: auto;" class="w-full rounded-xl my-8 shadow-lg">');
 
   return (
     <div className="min-h-screen bg-white">
