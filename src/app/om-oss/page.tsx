@@ -35,7 +35,7 @@ export default function OmOss() {
         <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
-            backgroundImage: "url('https://ext.same-assets.com/4166723710/4128430851.jpeg')",
+            backgroundImage: "url('/images/optimized/Rehabilitering/01-header-rehabilitering-griff-entreprenor.jpg')",
           }}
         >
           <div className="absolute inset-0 bg-black/60" />
@@ -101,16 +101,16 @@ export default function OmOss() {
             <div className="relative">
               <div className="grid grid-cols-2 gap-4">
                 <Image
-                  src="https://ext.same-assets.com/4166723710/4128430851.jpeg"
-                  alt="Griffentreprenor team på byggeplass"
+                  src="/images/optimized/Nybygg/nybygg-griff-entreprenor-02.webp"
+                  alt="Nybyggprosjekt i Trondheim"
                   width={300}
                   height={400}
                   className="rounded-lg shadow-lg object-cover h-64"
                   quality={75}
                 />
                 <Image
-                  src="https://ext.same-assets.com/4166723710/4128430851.jpeg"
-                  alt="Ferdig rehabiliteringsprosjekt"
+                  src="/images/optimized/Tilbygg/tilbygg-griff-entreprenor-02.webp"
+                  alt="Tilbyggprosjekt i Trondheim"
                   width={300}
                   height={400}
                   className="rounded-lg shadow-lg object-cover h-64 mt-8"
@@ -282,24 +282,9 @@ export default function OmOss() {
             <div className="space-y-12">
               {[
                 {
-                  year: "2008",
-                  title: "Oppstart av Griffentreprenor",
-                  description: "Grunnlagt med en visjon om å levere kvalitetsarbeid i Trondheim-regionen."
-                },
-                {
-                  year: "2012",
-                  title: "Utvidelse av tjenester",
-                  description: "Utvidet til å inkludere rehabilitering og større nybyggprosjekter."
-                },
-                {
-                  year: "2015",
-                  title: "Sertifisering og anerkjennelse",
-                  description: "Oppnådde godkjenning i tiltaksklasse 2 og ble medlem av Mestergruppen."
-                },
-                {
-                  year: "2018",
-                  title: "Digitalisering og modernisering",
-                  description: "Implementerte moderne prosjektstyringsverktøy og digitale løsninger."
+                  year: "2024",
+                  title: "Fremtiden er nå",
+                  description: "Fortsetter å innovere og levere fremtidens byggeløsninger til våre kunder."
                 },
                 {
                   year: "2020",
@@ -307,9 +292,24 @@ export default function OmOss() {
                   description: "Spesialiserte oss på energieffektive løsninger og miljøvennlige materialer."
                 },
                 {
-                  year: "2024",
-                  title: "Fremtiden er nå",
-                  description: "Fortsetter å innovere og levere fremtidens byggeløsninger til våre kunder."
+                  year: "2018",
+                  title: "Digitalisering og modernisering",
+                  description: "Implementerte moderne prosjektstyringsverktøy og digitale løsninger."
+                },
+                {
+                  year: "2015",
+                  title: "Sertifisering og anerkjennelse",
+                  description: "Oppnådde godkjenning i tiltaksklasse 2 og ble medlem av Mestergruppen."
+                },
+                {
+                  year: "2012",
+                  title: "Utvidelse av tjenester",
+                  description: "Utvidet til å inkludere rehabilitering og større nybyggprosjekter."
+                },
+                {
+                  year: "2008",
+                  title: "Oppstart av Griffentreprenor",
+                  description: "Grunnlagt med en visjon om å levere kvalitetsarbeid i Trondheim-regionen."
                 }
               ].map((milestone, index) => (
                 <div key={milestone.year} className="flex items-start gap-8">
@@ -403,8 +403,8 @@ export default function OmOss() {
               </div>
               <div className="text-center">
                 <Image
-                  src="https://ext.same-assets.com/4166723710/4128430851.jpeg"
-                  alt="Griffentreprenor team"
+                  src="/images/optimized/Terrasse/terrasse-griff-entreprenor-02.webp"
+                  alt="Griffentreprenor prosjekt - Terrasse"
                   width={400}
                   height={300}
                   className="rounded-lg shadow-lg mx-auto"

@@ -55,11 +55,11 @@ const servicesData = {
         answer: "Vi anbefaler høykvalitetsmaterialer som keramikk, porselen, rustfritt stål for kjøkken/bad, økologisk isolasjon, eikeparkett, og vedlikeholdsfrie fasadematerialer."
       }
     ],
-    heroImage: "/assets/images/processed/article/rehabilitering-trondheim-202506-1-article.jpg",
+    heroImage: "/images/optimized/Rehabilitering/01-header-rehabilitering-griff-entreprenor.jpg",
     images: [
-      "/assets/images/processed/article/rehabilitering-trondheim-202506-2-article.jpg",
-      "/assets/images/processed/article/rehabilitering-trondheim-202506-3-article.jpg",
-      "/assets/images/processed/article/rehabilitering-trondheim-202506-4-article.jpg"
+      "/images/optimized/Rehabilitering/rehabilitering-griff-entreprenor-04.webp",
+      "/images/optimized/Rehabilitering/rehabilitering-griff-entreprenor-05.webp",
+      "/images/optimized/Rehabilitering/rehabilitering-griff-entreprenor-06.webp"
     ]
   },
   "nybygg": {
@@ -101,10 +101,10 @@ const servicesData = {
         answer: "Ja, vi gir garanti på både byggearbeidet og materialene som brukes, med varighet som kan strekke seg fra ett til flere tiår avhengig av type materiale."
       }
     ],
-    heroImage: "/assets/images/processed/article/tilbygg-bolig-trondheim-202506-1-article.jpg",
+    heroImage: "/images/optimized/Nybygg/01-header-nybygg-griff-entreprenor.webp",
     images: [
-      "/assets/images/processed/article/tilbygg-bolig-trondheim-202506-2-article.jpg",
-      "/assets/images/processed/article/tilbygg-bolig-trondheim-202506-3-article.jpg"
+      "/images/optimized/Nybygg/nybygg-griff-entreprenor-02.webp",
+      "/images/optimized/Nybygg/nybygg-griff-entreprenor-03.webp"
     ]
   },
   "tilbygg": {
@@ -151,10 +151,10 @@ const servicesData = {
         answer: "Et godt utført tilbygg kan øke boligens verdi betydelig, ofte mer enn investeringskostnaden, spesielt hvis det tilfører ønsket ekstra plass og funksjonalitet."
       }
     ],
-    heroImage: "/assets/images/processed/article/tilbygg-bolig-trondheim-202506-4-article.jpg",
+    heroImage: "/images/optimized/Tilbygg/01-header-tilbygg-griff-entreprenor.webp",
     images: [
-      "/assets/images/processed/article/tilbygg-bolig-trondheim-202506-5-article.jpg",
-      "/assets/images/processed/article/tilbygg-bolig-trondheim-202506-6-article.jpg"
+      "/images/optimized/Tilbygg/tilbygg-griff-entreprenor-02.webp",
+      "/images/optimized/Tilbygg/tilbygg-griff-entreprenor-03.jpg"
     ]
   },
   "isolering": {
@@ -201,10 +201,10 @@ const servicesData = {
         answer: "Vi bruker dampsperre og tetthetskontroll for å forhindre fuktproblemer, og sørger for riktig ventilasjon for å opprettholde et sunt inneklima."
       }
     ],
-    heroImage: "/assets/images/processed/article/isolering-energisparing-trondheim-202506-1-article.jpg",
+    heroImage: "/images/optimized/Rehabilitering/01-header-rehabilitering-griff-entreprenor.jpg",
     images: [
-      "/assets/images/processed/article/isolering-energisparing-trondheim-202506-2-article.jpg",
-      "/assets/images/processed/article/isolering-energisparing-trondheim-202506-3-article.jpg"
+      "/images/optimized/Rehabilitering/rehabilitering-griff-entreprenor-02.webp",
+      "/images/optimized/Rehabilitering/rehabilitering-griff-entreprenor-03.webp"
     ]
   },
   "terrasse": {
@@ -251,10 +251,10 @@ const servicesData = {
         answer: "En velutført terrasse kan øke boligens verdi med 5-10% og gjør hjemmet mer attraktivt for potensielle kjøpere."
       }
     ],
-    heroImage: "/assets/images/processed/article/terrasse-bygging-trondheim-202506-1-article.jpg",
+    heroImage: "/images/optimized/Terrasse/01-header-terrasse-griff-entreprenor.webp",
     images: [
-      "/assets/images/processed/article/terrasse-bygging-trondheim-202506-2-article.jpg",
-      "/assets/images/processed/article/terrasse-bygging-trondheim-202506-3-article.jpg"
+      "/images/optimized/Terrasse/terrasse-griff-entreprenor-02.webp",
+      "/images/optimized/Terrasse/terrasse-griff-entreprenor-03.webp"
     ]
   },
   "garasje": {
@@ -301,10 +301,10 @@ const servicesData = {
         answer: "En standard garasje tar vanligvis 2-4 uker å bygge, avhengig av størrelse, kompleksitet og værforhold."
       }
     ],
-    heroImage: "/assets/images/processed/article/tilbygg-bolig-trondheim-202506-7-article.jpg",
+    heroImage: "/images/optimized/Garasje/01-header-garasje-griff-entreprenor.jpg",
     images: [
-      "/assets/images/processed/article/tilbygg-bolig-trondheim-202506-8-article.jpg",
-      "/assets/images/processed/article/tilbygg-bolig-trondheim-202506-9-article.jpg"
+      "/images/optimized/Garasje/garasje-griff-entreprenor-02.webp",
+      "/images/optimized/Garasje/garasje-griff-entreprenor-03.webp"
     ]
   },
   "utvendig-maling": {
@@ -351,10 +351,10 @@ const servicesData = {
         answer: "Vi gir 5-10 års garanti på vårt håndverk, avhengig av materialvalg og underlagets tilstand ved arbeidets start."
       }
     ],
-    heroImage: "/assets/images/processed/article/rehabilitering-trondheim-202506-7-article.jpg",
+    heroImage: "/images/optimized/Rehabilitering/rehabilitering-griff-entreprenor-07.webp",
     images: [
-      "/assets/images/processed/article/rehabilitering-trondheim-202506-8-article.jpg",
-      "/assets/images/processed/article/rehabilitering-trondheim-202506-9-article.jpg"
+      "/images/optimized/Rehabilitering/rehabilitering-griff-entreprenor-08.webp",
+      "/images/optimized/Rehabilitering/rehabilitering-griff-entreprenor-09.webp"
     ]
   },
   "bad-og-vatrom": {
@@ -401,10 +401,10 @@ const servicesData = {
         answer: "Ja, vi gir 10 års garanti på våtromsarbeid og tetting, i henhold til bransjestandarder og vårt kvalitetssystem."
       }
     ],
-    heroImage: "/assets/images/processed/article/rehabilitering-trondheim-202506-10-article.jpg",
+    heroImage: "/images/optimized/bad-og-vatrom/01-header-bad-vatrom-griff-entreprenor.webp",
     images: [
-      "/assets/images/processed/article/rehabilitering-trondheim-202506-11-article.jpg",
-      "/assets/images/processed/article/rehabilitering-trondheim-202506-12-article.jpg"
+      "/images/optimized/bad-og-vatrom/bad-vatrom-griff-entreprenor-02.webp",
+      "/images/optimized/bad-og-vatrom/bad-vatrom-griff-entreprenor-03.webp"
     ]
   },
   "malearbeid": {
@@ -451,10 +451,10 @@ const servicesData = {
         answer: "Vegger bør males hvert 5-7 år ved normal bruk, mens tak kan holde 10-15 år. Høy trafikkområder kan trenge hyppigere oppfrisking."
       }
     ],
-    heroImage: "/assets/images/processed/article/rehabilitering-trondheim-202506-13-article.jpg",
+    heroImage: "/images/optimized/Rehabilitering/rehabilitering-griff-entreprenor-13.webp",
     images: [
-      "/assets/images/processed/article/rehabilitering-trondheim-202506-14-article.jpg",
-      "/assets/images/processed/article/rehabilitering-trondheim-202506-15-article.jpg"
+      "/images/optimized/Rehabilitering/rehabilitering-griff-entreprenor-14.webp",
+      "/images/optimized/Rehabilitering/rehabilitering-griff-entreprenor-15.webp"
     ]
   },
   "vinduer": {
@@ -501,10 +501,10 @@ const servicesData = {
         answer: "Ja, vi gir garanti på både produkter og installasjon. Vinduene har produsentgaranti, og vi garanterer for vårt installasjonsarbeid."
       }
     ],
-    heroImage: "/assets/images/processed/article/vinduer-utskifting-trondheim-202506-1-article.jpg",
+    heroImage: "/images/optimized/Vinduer/01-header-vinduer-griff-entreprenor.webp",
     images: [
-      "/assets/images/processed/article/vinduer-utskifting-trondheim-202506-2-article.jpg",
-      "/assets/images/processed/article/vinduer-utskifting-trondheim-202506-3-article.jpg"
+      "/images/optimized/Vinduer/vinduer-griff-entreprenor-02.webp",
+      "/images/optimized/Vinduer/vinduer-griff-entreprenor-03.webp"
     ]
   },
   "flislegging": {
@@ -551,10 +551,10 @@ const servicesData = {
         answer: "Kvalitetsfuger holder 10-15 år med riktig vedlikehold. Vi bruker soppresistente fuger som tåler fukt og rengjøringsmidler godt."
       }
     ],
-    heroImage: "/assets/images/processed/article/rehabilitering-trondheim-202506-16-article.jpg",
+    heroImage: "/images/optimized/bad-og-vatrom/bad-vatrom-griff-entreprenor-04.webp",
     images: [
-      "/assets/images/processed/article/rehabilitering-trondheim-202506-17-article.jpg",
-      "/assets/images/processed/article/rehabilitering-trondheim-202506-18-article.jpg"
+      "/images/optimized/bad-og-vatrom/bad-vatrom-griff-entreprenor-05.webp",
+      "/images/optimized/bad-og-vatrom/bad-vatrom-griff-entreprenor-06.webp"
     ]
   },
   "snekkerarbeid": {
@@ -601,10 +601,10 @@ const servicesData = {
         answer: "Ja, vi gir garanti på vårt håndverk og materialene vi bruker. Garantiperioden avhenger av type arbeid og materialer."
       }
     ],
-    heroImage: "/assets/images/processed/article/rehabilitering-trondheim-202506-19-article.jpg",
+    heroImage: "/images/optimized/Rehabilitering/rehabilitering-griff-entreprenor-19.webp",
     images: [
-      "/assets/images/processed/article/rehabilitering-trondheim-202506-20-article.jpg",
-      "/assets/images/processed/article/rehabilitering-trondheim-202506-21-article.jpg"
+      "/images/optimized/Rehabilitering/rehabilitering-griff-entreprenor-20.webp",
+      "/images/optimized/Rehabilitering/rehabilitering-griff-entreprenor-21.webp"
     ]
   }
 };
@@ -649,7 +649,7 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
   }
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-white pb-20 md:pb-0">
       {/* Breadcrumb */}
       <div className="bg-slate-50 py-4">
         <div className="container max-w-6xl mx-auto px-4">
@@ -878,6 +878,48 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
           <ArrowLeft className="w-4 h-4" />
           Tilbake til alle tjenester
         </Link>
+      </div>
+
+      {/* Mobile Sticky CTA Bar */}
+      <div className="fixed bottom-0 left-0 right-0 bg-white border-t border-slate-200 shadow-lg p-4 z-40 md:hidden">
+        <div className="flex gap-3">
+          <Button asChild size="lg" className="flex-1 bg-primary hover:bg-primary/90">
+            <Link href="/kontakt">
+              <Mail className="mr-2 w-4 h-4" />
+              Få tilbud
+            </Link>
+          </Button>
+          <Button asChild size="lg" variant="outline" className="flex-1 border-primary text-primary hover:bg-primary hover:text-white">
+            <Link href="tel:99883080">
+              <Phone className="mr-2 w-4 h-4" />
+              Ring nå
+            </Link>
+          </Button>
+        </div>
+      </div>
+
+      {/* Desktop Sticky CTA Widget */}
+      <div className="hidden md:block fixed bottom-8 right-8 z-40">
+        <div className="bg-white rounded-2xl shadow-2xl border border-slate-200 p-6 w-80">
+          <h3 className="text-lg font-bold text-slate-900 mb-4">Trenger du hjelp?</h3>
+          <div className="space-y-3">
+            <Button asChild size="lg" className="w-full bg-primary hover:bg-primary/90">
+              <Link href="/kontakt">
+                <Mail className="mr-2 w-4 h-4" />
+                Få gratis tilbud
+              </Link>
+            </Button>
+            <Button asChild size="lg" variant="outline" className="w-full border-primary text-primary hover:bg-primary hover:text-white">
+              <Link href="tel:99883080">
+                <Phone className="mr-2 w-4 h-4" />
+                Ring oss: 99883080
+              </Link>
+            </Button>
+          </div>
+          <p className="text-xs text-slate-500 mt-4 text-center">
+            Svar innen 24 timer
+          </p>
+        </div>
       </div>
     </div>
   );

@@ -18,19 +18,19 @@ const CATEGORY_MAPPING: Record<string, string> = {
   'Flislegging': 'bad-og-vatrom',
   'Isolering': 'rehabilitering',
   'Malearbeid': 'rehabilitering',
-  'Snekkerarbeid': 'tilbygg',
+  'Snekkerarbeid': 'rehabilitering',
   'Utvendig maling': 'rehabilitering'
 };
 
 // Header image mapping (category → optimized header image path)
 const HEADER_IMAGES: Record<string, string> = {
   'bad-og-vatrom': '/images/optimized/bad-og-vatrom/01-header-bad-vatrom-griff-entreprenor.webp',
-  'garasje': '/images/optimized/garasje/01-header-garasje-griff-entreprenor.jpg',
-  'nybygg': '/images/optimized/nybygg/01-header-nybygg-griff-entreprenor.webp',
-  'rehabilitering': '/images/optimized/rehabilitering/01-header-rehabilitering-griff-entreprenor.jpg',
-  'terrasse': '/images/optimized/terrasse/01-header-terrasse-griff-entreprenor.jpg',
-  'tilbygg': '/images/optimized/tilbygg/01-header-tilbygg-griff-entreprenor.jpg',
-  'vinduer': '/images/optimized/vinduer/01-header-vinduer-griff-entreprenor.jpg'
+  'garasje': '/images/optimized/Garasje/01-header-garasje-griff-entreprenor.jpg',
+  'nybygg': '/images/optimized/Nybygg/01-header-nybygg-griff-entreprenor.webp',
+  'rehabilitering': '/images/optimized/Rehabilitering/01-header-rehabilitering-griff-entreprenor.jpg',
+  'terrasse': '/images/optimized/Terrasse/01-header-terrasse-griff-entreprenor.webp',
+  'tilbygg': '/images/optimized/Tilbygg/01-header-tilbygg-griff-entreprenor.webp',
+  'vinduer': '/images/optimized/Vinduer/01-header-vinduer-griff-entreprenor.webp'
 };
 
 // This will handle both manual articles and imported HTML files
