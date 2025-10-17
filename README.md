@@ -1,4 +1,25 @@
+# Griff Entreprenør Website
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+
+## 🔧 Critical Fix: Image Rotation (Oct 2025)
+
+### The Problem
+Photos from Samsung phones were displaying sideways (rotated 90°) on the website.
+
+**Why?** Samsung phones save photos as landscape but include EXIF metadata saying "rotate this 90° clockwise when displaying". Our image optimizer (Sharp) wasn't reading this metadata.
+
+### The Solution
+Added one line to `compress-images.js`:
+```javascript
+image = image.rotate(); // Reads EXIF orientation and applies rotation
+```
+
+**Result**: All images now display correctly, and future uploads will auto-rotate.
+
+**Documentation**: See `00-documentation/FINAL-SUMMARY-IMAGE-ROTATION-FIX.md` for complete details.
+
+---
 
 ## Getting Started
 
