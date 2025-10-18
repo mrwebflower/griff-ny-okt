@@ -78,7 +78,7 @@ export default function Header() {
             <Link href="/" className="flex-shrink-0">
               <Image
                 src="https://ext.same-assets.com/4166723710/3732206285.png"
-                alt="Griffentreprenor Logo"
+                alt="Griff Entreprenør Logo"
                 width={180}
                 height={60}
                 className="h-12 w-auto"
@@ -196,7 +196,7 @@ export default function Header() {
                       <div key={item.name} className="border-b border-gray-100 pb-4">
                         <Link
                           href={item.href}
-                          className="text-griffen-text font-semibold hover:text-primary transition-colors py-2 block"
+                          className="text-slate-900 font-semibold hover:text-primary transition-colors py-2 block"
                           onClick={() => setMobileMenuOpen(false)}
                         >
                           {item.name}
@@ -207,20 +207,16 @@ export default function Header() {
                               <h4 className="text-xs font-semibold text-gray-400 uppercase tracking-wide mb-1">
                                 {category.title}
                               </h4>
-                              {category.services.map((service) => {
-                                const Icon = service.icon;
-                                return (
-                                  <Link
-                                    key={service.id}
-                                    href={service.href}
-                                    className="flex items-center gap-2 py-1 text-sm text-griffen-text-light hover:text-primary transition-colors"
-                                    onClick={() => setMobileMenuOpen(false)}
-                                  >
-                                    <Icon className="w-3 h-3 text-primary" />
-                                    {service.title}
-                                  </Link>
-                                );
-                              })}
+                              {category.services.map((service) => (
+                                <Link
+                                  key={service.id}
+                                  href={service.href}
+                                  className="block py-1 text-sm text-slate-700 hover:text-primary transition-colors pl-2"
+                                  onClick={() => setMobileMenuOpen(false)}
+                                >
+                                  {service.title}
+                                </Link>
+                              ))}
                             </div>
                           ))}
                         </div>
@@ -231,7 +227,7 @@ export default function Header() {
                     <Link
                       key={item.name}
                       href={item.href}
-                      className="text-griffen-text font-semibold hover:text-primary transition-colors py-2 border-b border-gray-100 last:border-0"
+                      className="text-slate-900 font-semibold hover:text-primary transition-colors py-2 border-b border-gray-100 last:border-0"
                       onClick={() => setMobileMenuOpen(false)}
                     >
                       {item.name}

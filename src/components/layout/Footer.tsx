@@ -9,7 +9,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company Information */}
           <div>
-            <h3 className="text-xl font-bold mb-6 text-white">Griffentreprenor</h3>
+            <h3 className="text-xl font-bold mb-6 text-white">Griff Entreprenør</h3>
             <div className="space-y-3 text-gray-300">
               <div className="flex items-start gap-3">
                 <MapPin className="w-5 h-5 mt-1 flex-shrink-0 text-primary" />
@@ -141,7 +141,7 @@ export default function Footer() {
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <div className="text-center md:text-left">
               <p className="text-gray-400 text-sm">
-                © 2024 Griffentreprenor AS. Alle rettigheter forbeholdt.
+                © 2024 Griff Entreprenør AS. Alle rettigheter forbeholdt.
               </p>
             </div>
             <div className="flex flex-wrap justify-center md:justify-end gap-6 text-sm text-gray-400">

@@ -16,14 +16,14 @@ export default function Hero() {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 container text-center text-white">
+      <div className="relative z-10 container text-center text-white pt-20 sm:pt-0">
         <div className="max-w-4xl mx-auto space-y-8">
           {/* Main Heading */}
           <div className="space-y-4">
             <h1 className="text-5xl md:text-7xl font-bold leading-tight">
               Velkommen til{" "}
               <span className="bg-gradient-to-r from-yellow-400 to-yellow-600 bg-clip-text text-transparent">
-                Griffentreprenor
+                Griff Entreprenør
               </span>
             </h1>
             <p className="text-xl md:text-2xl text-gray-200 max-w-2xl mx-auto leading-relaxed">
@@ -32,15 +32,15 @@ export default function Hero() {
           </div>
 
           {/* Feature Highlights */}
-          <div className="flex flex-wrap justify-center gap-4 text-sm md:text-base">
-            <div className="bg-white/10 backdrop-blur-sm rounded-full px-4 py-2">
+          <div className="grid grid-cols-3 gap-2 text-xs sm:text-sm md:text-base">
+            <div className="bg-white/10 backdrop-blur-sm rounded-full px-2 py-1 sm:px-4 sm:py-2 text-center">
               ✓ 15+ års erfaring
             </div>
-            <div className="bg-white/10 backdrop-blur-sm rounded-full px-4 py-2">
-              ✓ Sertifiserte håndverkere
+            <div className="bg-white/10 backdrop-blur-sm rounded-full px-2 py-1 sm:px-4 sm:py-2 text-center">
+              ✓ Sertifiserte
             </div>
-            <div className="bg-white/10 backdrop-blur-sm rounded-full px-4 py-2">
-              ✓ Lokal tilstedeværelse
+            <div className="bg-white/10 backdrop-blur-sm rounded-full px-2 py-1 sm:px-4 sm:py-2 text-center">
+              ✓ Lokal
             </div>
           </div>
 

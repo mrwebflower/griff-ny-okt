@@ -10,16 +10,16 @@ const raleway = Raleway({
 });
 
 export const metadata: Metadata = {
-  title: "Griffentreprenor - Entreprenør i Trondheim",
-  description: "Griffentreprenor - Din lokale entreprenør i Trondheim. Vi tilbyr tjenester innen nybygg, rehabilitering, tilbygg og totalentreprise.",
+  title: "Griff Entreprenør - Entreprenør i Trondheim",
+  description: "Griff Entreprenør - Din lokale entreprenør i Trondheim. Vi tilbyr tjenester innen nybygg, rehabilitering, tilbygg og totalentreprise.",
   keywords: "entreprenør trondheim, bygg trondheim, rehabilitering, nybygg, tilbygg, garasje, bad, våtrom, terrasse, isolering",
-  authors: [{ name: "Griffentreprenor AS" }],
+  authors: [{ name: "Griff Entreprenør AS" }],
   openGraph: {
-    title: "Griffentreprenor - Entreprenør i Trondheim",
+    title: "Griff Entreprenør - Entreprenør i Trondheim",
     description: "Din lokale entreprenør i Trondheim. Vi tilbyr tjenester innen nybygg, rehabilitering, tilbygg og totalentreprise.",
     type: "website",
     locale: "no_NO",
-    siteName: "Griffentreprenor",
+    siteName: "Griff Entreprenør",
   },
   alternates: {
     canonical: "https://griffentreprenor.no",

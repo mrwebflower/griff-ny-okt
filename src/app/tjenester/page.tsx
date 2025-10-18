@@ -5,11 +5,11 @@ import { ArrowRight, Home, Building, Wrench, TreePine, Droplets, Car, Paintbrush
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Tjenester - Griffentreprenor | Komplett håndverkstjenester i Trondheim",
+  title: "Tjenester - Griff Entreprenør | Komplett håndverkstjenester i Trondheim",
   description: "Utforsk våre håndverkstjenester: rehabilitering, nybygg, tilbygg, bad og våtrom, terrasser, isolering og mer. Sentralt godkjent i Trondheim.",
   keywords: "håndverkstjenester Trondheim, rehabilitering, nybygg, tilbygg, bad våtrom, terrasse, isolering, garasje, maling, vinduer, flislegging, snekkerarbeid",
   openGraph: {
-    title: "Tjenester - Griffentreprenor | Komplett håndverkstjenester i Trondheim",
+    title: "Tjenester - Griff Entreprenør | Komplett håndverkstjenester i Trondheim",
     description: "Utforsk våre håndverkstjenester: rehabilitering, nybygg, tilbygg, bad og våtrom, terrasser, isolering og mer. Sentralt godkjent i Trondheim.",
     type: "website",
     locale: "nb_NO",

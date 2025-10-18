@@ -24,7 +24,7 @@ export default function Features() {
       <div className="container">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-griffen-text mb-4">
-            Hvorfor velge Griffentreprenor?
+            Hvorfor velge Griff Entreprenør?
           </h2>
           <p className="text-xl text-griffen-text-light max-w-2xl mx-auto">
             Vi bygger på kvalitet, pålitelighet og fagkompetanse

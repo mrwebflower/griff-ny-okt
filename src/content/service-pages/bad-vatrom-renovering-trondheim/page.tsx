@@ -4,7 +4,7 @@ import { Calendar, Clock, ArrowLeft, ArrowRight, Share2, Droplets, CheckCircle }
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Bad og våtrom renovering i Trondheim - Ekspertguide 2024 | Griffentreprenor",
+  title: "Bad og våtrom renovering i Trondheim - Ekspertguide 2024 | Griff Entreprenør",
   description: "Profesjonelle tips for renovering av bad og våtrom i Trondheim. Vi deler våre beste råd for et vellykket badprosjekt med våtromssertifiserte håndverkere.",
   keywords: "bad renovering, våtrom Trondheim, baderom, våtromssertifikat, totalrenovering, fuktsikring, Trondheim entreprenør",
   openGraph: {
@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     description: "Profesjonelle tips for renovering av bad og våtrom i Trondheim. Vi deler våre beste råd for et vellykket badprosjekt.",
     type: "article",
     publishedTime: "2024-01-10T00:00:00.000Z",
-    authors: ["Griffentreprenor"],
+    authors: ["Griff Entreprenør"],
     locale: "nb_NO",
     images: [
       {
@@ -405,7 +405,7 @@ export default function Article() {
                 </p>
 
                 <div className="bg-primary text-white rounded-xl p-8 my-8 text-center">
-                  <h4 className="text-2xl font-bold mb-4">Griffentreprenor AS</h4>
+                  <h4 className="text-2xl font-bold mb-4">Griff Entreprenør AS</h4>
                   <p className="text-lg mb-6 opacity-90">
                     Pålitelig håndverk med lokal kjærlighet
                   </p>

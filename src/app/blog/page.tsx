@@ -3,11 +3,11 @@ import { getAllBlogPosts, getBlogCategories } from "@/lib/blogUtils";
 import BlogClient from "./BlogClient";
 
 export const metadata: Metadata = {
-  title: "Blog - Griffentreprenor | Byggetips og Råd",
+  title: "Blog - Griff Entreprenør | Byggetips og Råd",
   description: "Les våre ekspertartikler om byggeprosjekter, byggetillatelser, våtrom og andre byggetips for Trondheim-området.",
   keywords: "byggeblogg, byggetips, byggetillatelser, våtrom, Trondheim, entreprenør",
   openGraph: {
-    title: "Blog - Griffentreprenor | Byggetips og Råd",
+    title: "Blog - Griff Entreprenør | Byggetips og Råd",
     description: "Les våre ekspertartikler om byggeprosjekter, byggetillatelser, våtrom og andre byggetips for Trondheim-området.",
     type: "website",
     locale: "nb_NO",

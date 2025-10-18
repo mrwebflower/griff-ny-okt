@@ -3,6 +3,10 @@ import ArticleWrapper from "@/components/blog/ArticleWrapper";
 import type { Metadata } from "next";
 import fs from "node:fs";
 import path from "node:path";
+import Link from "next/link";
+import { Button } from "@/components/ui/button";
+import { Mail, Phone } from "lucide-react";
+import FloatingGiftCTA from "@/components/ui/FloatingGiftCTA";
 
 // Category mapping (service → folder name)
 const CATEGORY_MAPPING: Record<string, string> = {
@@ -53,7 +57,7 @@ const getArticleContent = async (slug: string) => {
 
       // Extract description from first paragraph
       const descMatch = html.match(/<p[^>]*>([^<]+)<\/p>/i);
-      const description = `${descMatch?.[1]?.substring(0, 160)}...` || "Profesjonell veiledning fra Griffentreprenor";
+      const description = `${descMatch?.[1]?.substring(0, 160)}...` || "Profesjonell veiledning fra Griff Entreprenør";
 
       // Extract services and map to optimized image category
       const services = metaServicesMatch?.[1] || "";
@@ -109,12 +113,12 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
 
   if (!article) {
     return {
-      title: "Artikkel ikke funnet | Griffentreprenor"
+      title: "Artikkel ikke funnet | Griff Entreprenør"
     };
   }
 
   return {
-    title: `${article.title} | Griffentreprenor`,
+    title: `${article.title} | Griff Entreprenør`,
     description: article.description,
     keywords: article.keywords,
     openGraph: {
@@ -122,7 +126,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
       description: article.description,
       type: "article",
       publishedTime: article.publishedDate,
-      authors: ["Griffentreprenor"],
+      authors: ["Griff Entreprenør"],
       locale: "nb_NO",
       images: article.image ? [
         {
@@ -150,17 +154,46 @@ export default async function ArticlePage({ params }: { params: Promise<{ slug: 
   // For imported HTML articles, use the ArticleWrapper
   if (article.isImported) {
     return (
-      <ArticleWrapper
-        title={article.title}
-        description={article.description}
-        publishedDate={article.publishedDate}
-        readTime={article.readTime}
-        category={article.category}
-        htmlContent={article.htmlContent}
-        articleId={article.articleId}
-        keywords={article.keywords}
-        image={article.image}
-      />
+      <div className="relative">
+        <ArticleWrapper
+          title={article.title}
+          description={article.description}
+          publishedDate={article.publishedDate}
+          readTime={article.readTime}
+          category={article.category}
+          htmlContent={article.htmlContent}
+          articleId={article.articleId}
+          keywords={article.keywords}
+          image={article.image}
+        />
+
+        {/* Desktop Sticky CTA Widget */}
+        <div className="hidden md:block fixed bottom-8 right-8 z-40">
+          <div className="bg-white rounded-2xl shadow-2xl border border-slate-200 p-6 w-80">
+            <h3 className="text-lg font-bold text-slate-900 mb-4">Trenger du hjelp?</h3>
+            <div className="space-y-3">
+              <Button asChild size="lg" className="w-full bg-primary hover:bg-primary/90">
+                <Link href="/kontakt">
+                  <Mail className="mr-2 w-4 h-4" />
+                  Få gratis tilbud
+                </Link>
+              </Button>
+              <Button asChild size="lg" variant="outline" className="w-full border-primary text-primary hover:bg-primary hover:text-white">
+                <Link href="tel:99883080">
+                  <Phone className="mr-2 w-4 h-4" />
+                  Ring oss: 99883080
+                </Link>
+              </Button>
+            </div>
+            <p className="text-xs text-slate-500 mt-4 text-center">
+              Svar innen 24 timer
+            </p>
+          </div>
+        </div>
+
+        {/* Mobile Gift Icon CTA */}
+        <FloatingGiftCTA />
+      </div>
     );
   }
 

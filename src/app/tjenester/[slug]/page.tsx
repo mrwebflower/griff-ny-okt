@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight, ArrowLeft, Check, Phone, Mail, Calendar, Clock, Users, Award, HelpCircle, Wrench, Shield, Star } from "lucide-react";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
+import FloatingGiftCTA from "@/components/ui/FloatingGiftCTA";
 
 // Service data from CSV
 const servicesData = {
@@ -617,16 +618,16 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
 
   if (!service) {
     return {
-      title: "Tjeneste ikke funnet - Griffentreprenor",
+      title: "Tjeneste ikke funnet - Griff Entreprenør",
     };
   }
 
   return {
-    title: `${service.title} - Griffentreprenor | Profesjonell ${service.title.toLowerCase()} i Trondheim`,
+    title: `${service.title} - Griff Entreprenør | Profesjonell ${service.title.toLowerCase()} i Trondheim`,
     description: `${service.description.substring(0, 160)}...`,
     keywords: `${service.title.toLowerCase()} Trondheim, ${service.title.toLowerCase()} tjenester, entreprenør Trondheim, byggearbeid`,
     openGraph: {
-      title: `${service.title} - Griffentreprenor`,
+      title: `${service.title} - Griff Entreprenør`,
       description: `${service.description.substring(0, 160)}...`,
       type: "website",
       locale: "nb_NO",
@@ -649,7 +650,7 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
   }
 
   return (
-    <div className="min-h-screen bg-white pb-20 md:pb-0">
+    <div className="min-h-screen bg-white">
       {/* Breadcrumb */}
       <div className="bg-slate-50 py-4">
         <div className="container max-w-6xl mx-auto px-4">
@@ -880,24 +881,6 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
         </Link>
       </div>
 
-      {/* Mobile Sticky CTA Bar */}
-      <div className="fixed bottom-0 left-0 right-0 bg-white border-t border-slate-200 shadow-lg p-4 z-40 md:hidden">
-        <div className="flex gap-3">
-          <Button asChild size="lg" className="flex-1 bg-primary hover:bg-primary/90">
-            <Link href="/kontakt">
-              <Mail className="mr-2 w-4 h-4" />
-              Få tilbud
-            </Link>
-          </Button>
-          <Button asChild size="lg" variant="outline" className="flex-1 border-primary text-primary hover:bg-primary hover:text-white">
-            <Link href="tel:99883080">
-              <Phone className="mr-2 w-4 h-4" />
-              Ring nå
-            </Link>
-          </Button>
-        </div>
-      </div>
-
       {/* Desktop Sticky CTA Widget */}
       <div className="hidden md:block fixed bottom-8 right-8 z-40">
         <div className="bg-white rounded-2xl shadow-2xl border border-slate-200 p-6 w-80">
@@ -921,6 +904,9 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
           </p>
         </div>
       </div>
+
+      {/* Mobile Gift Icon CTA */}
+      <FloatingGiftCTA />
     </div>
   );
 }

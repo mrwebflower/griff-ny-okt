@@ -4,7 +4,7 @@ import { Calendar, Clock, ArrowLeft, ArrowRight, Share2, BookOpen, CheckCircle }
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Byggetillatelse for garasje i Trondheim - Komplett guide 2024 | Griffentreprenor",
+  title: "Byggetillatelse for garasje i Trondheim - Komplett guide 2024 | Griff Entreprenør",
   description: "Alt du trenger å vite om søknadsprosessen for byggetillatelse til garasje i Trondheim kommune. Fra krav til dokumentasjon til ferdigstillelse. Ekspertråd fra erfarne entreprenører.",
   keywords: "byggetillatelse garasje, garasje Trondheim, byggeregler, søknadsprosess, dobbelgarasje, isolert garasje, byggetips",
   openGraph: {
@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     description: "Alt du trenger å vite om søknadsprosessen for byggetillatelse til garasje i Trondheim kommune.",
     type: "article",
     publishedTime: "2024-01-15T00:00:00.000Z",
-    authors: ["Griffentreprenor"],
+    authors: ["Griff Entreprenør"],
     locale: "nb_NO",
     images: [
       {

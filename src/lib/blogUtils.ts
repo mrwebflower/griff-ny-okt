@@ -151,7 +151,7 @@ function extractMetadataFromHtml(html: string, fileName: string) {
   } else if (firstPMatch) {
     excerpt = `${firstPMatch[1].replace(/<[^>]+>/g, '').substring(0, 160)}...`;
   } else {
-    excerpt = "Profesjonell veiledning og ekspertråd fra Griffentreprenor";
+    excerpt = "Profesjonell veiledning og ekspertråd fra Griff Entreprenør";
   }
 
   // Determine category from services or content with better mapping

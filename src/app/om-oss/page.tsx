@@ -22,8 +22,8 @@ import {
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Om Oss - Griffentreprenor | Din lokale entreprenør i Trondheim",
-  description: "Lær mer om Griffentreprenor - din pålitelige entreprenør i Trondheim med over 15 års erfaring. Vi bygger kvalitet og skaper fremtiden sammen.",
+  title: "Om Oss - Griff Entreprenør | Din lokale entreprenør i Trondheim",
+  description: "Lær mer om Griff Entreprenør - din pålitelige entreprenør i Trondheim med over 15 års erfaring. Vi bygger kvalitet og skaper fremtiden sammen.",
   keywords: "om griffentreprenor, entreprenør trondheim, byggefirma historie, erfaring, team, kvalitet",
 };
 
@@ -77,11 +77,11 @@ export default function OmOss() {
             <div className="space-y-8">
               <div>
                 <h2 className="text-4xl font-bold text-griffen-text mb-6">
-                  Historien bak Griffentreprenor
+                  Historien bak Griff Entreprenør
                 </h2>
                 <div className="space-y-4 text-griffen-text-light text-lg leading-relaxed">
                   <p>
-                    Griffentreprenor ble grunnlagt i 2008 med en klar visjon: å være Trondheims mest pålitelige
+                    Griff Entreprenør ble grunnlagt i 2008 med en klar visjon: å være Trondheims mest pålitelige
                     og kvalitetsfokuserte entreprenør. Det startet som en drøm om å skape noe varig og meningsfullt
                     i byggebransjen.
                   </p>
@@ -308,7 +308,7 @@ export default function OmOss() {
                 },
                 {
                   year: "2008",
-                  title: "Oppstart av Griffentreprenor",
+                  title: "Oppstart av Griff Entreprenør",
                   description: "Grunnlagt med en visjon om å levere kvalitetsarbeid i Trondheim-regionen."
                 }
               ].map((milestone, index) => (
@@ -404,7 +404,7 @@ export default function OmOss() {
               <div className="text-center">
                 <Image
                   src="/images/optimized/Terrasse/terrasse-griff-entreprenor-02.webp"
-                  alt="Griffentreprenor prosjekt - Terrasse"
+                  alt="Griff Entreprenør prosjekt - Terrasse"
                   width={400}
                   height={300}
                   className="rounded-lg shadow-lg mx-auto"
